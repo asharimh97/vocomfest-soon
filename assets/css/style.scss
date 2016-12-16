@@ -1,0 +1,148 @@
+/*
+	Project Name : Vocomfest 2017 - Coming Soon
+	Author : Vocomfest 2017 Technical Support
+	Date Created : 16 December 2016 13:58:00
+	Copyright : 2016 (c) All Rights Reserved
+
+	For Vocomfest 2017 only. Not for shared or published by others.
+*/
+$blue : #2980b8 ;
+$white : #fff ;
+
+@mixin transition($time){
+	transition: all $time*1s ease-in-out ;
+	-webkit-transition: all $time*1s ease-in-out ;
+	-moz-transition: all $time*1s ease-in-out ;
+	-o-transition: all $time*1s ease-in-out ;
+}
+
+@mixin radius($rad){
+	border-radius: $rad*1px ;
+	-webkit-border-radius: $rad*1px ;
+	-moz-border-radius: $rad*1px ;
+	-o-border-radius: $rad*1px ;
+}
+
+@import '_font' ;
+@import '_reset' ;
+
+/* Main reset */
+html, body{
+	font-family : 'Aller-Light' ;
+	background : $white ;
+	width : 100% ;
+	height : 100% ;
+	margin : 0 ;
+	padding : 0 ;
+	top : 0 ;
+	left : 0 ;
+}
+.nowrap{
+	margin : 0px !important ;
+	padding : 0px !important ;
+}
+
+/* Padding and margin setting */
+@for $i from 1 through 10{
+	.mg-#{$i*5}{
+		margin : $i*5px ;
+	}
+	.mg-bt-#{$i*5}{
+		margin-top : $i*5px ;
+		margin-bottom : $i*5px ;
+	}
+	.mg-lr-#{$i*5}{
+		margin-left : $i*5px ;
+		margin-right : $i*5px ;
+	}
+	.mg-t-#{$i*5}{
+		margin-top : $i*5px ;
+	}
+	.mg-b-#{$i*5}{
+		margin-bottom : $i*5px ;
+	}
+	.mg-l-#{$i*5}{
+		margin-left : $i*5px ;
+	}
+	.mg-r-#{$i*5}{
+		margin-right : $i*5px ;
+	}
+}
+
+@for $i from 1 through 10{
+	.pd-#{$i*5}{
+		padding : $i*5px ;
+	}
+	.pd-bt-#{$i*5}{
+		padding-top : $i*5px ;
+		padding-bottom : $i*5px ;
+	}
+	.pd-lr-#{$i*5}{
+		padding-left : $i*5px ;
+		padding-right : $i*5px ;
+	}
+	.pd-t-#{$i*5}{
+		padding-top : $i*5px ;
+	}
+	.pd-b-#{$i*5}{
+		padding-bottom : $i*5px ;
+	}
+	.pd-l-#{$i*5}{
+		padding-left : $i*5px ;
+	}
+	.pd-r-#{$i*5}{
+		padding-right : $i*5px ;
+	}
+}
+
+/* Main Components */
+#main-content{
+	overflow: hidden ;
+	height : 100% ;
+}
+.content{
+	display: table-cell ;
+	float : none ;
+}
+.brand-logo{
+	max-height: 70px ;
+}
+.bods{
+	position: absolute ;
+	display : table ;
+	top : 50% ;
+	transform: translateY(-50%);
+}
+.content-row{
+	display : table-row ;
+	height: 100% ;
+}
+.head{
+	color : $blue ;
+
+	&-title{
+		font-family: 'Montserrat-Bold' ;
+		font-size: 3.1em !important ;
+	}
+
+	&-content{
+		font-family : 'Aller-Light' ;
+		font-size: 1.2em ;
+	}
+}
+.head-frame{
+	overflow : hidden ;
+	position : absolute ;
+	top : 50% ;
+	transform: translateY(-50%);
+}
+.land{
+	position : absolute ;
+	width : 100% ;
+	height: 70px ;
+	background: $blue ;
+	bottom: 0 ;
+	left: 0 ;
+}
+
+@import '_animation' ;

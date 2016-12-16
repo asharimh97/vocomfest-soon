@@ -1,0 +1,122 @@
+/* Animations CSS */
+
+#lorem{
+	width: 100% ;
+	height: 100% ;
+	background: $blue ;
+	position: fixed ;
+	left : 0 ;
+
+	transition: all 0.35s ease-in-out ;
+	-webkit-transition: all 0.35s ease-in-out ;
+	-moz-transition: all 0.35s ease-in-out ;
+	-o-transition: all 0.35s ease-in-out ;
+}
+.lorem-hide{
+	bottom : -100% ;
+}
+.lorem-show{
+	bottom : 0 !important ;
+}
+.rocket{
+	width : 100% ;
+
+	&-shake{
+		animation: shake infinite 2s linear ;
+	}
+	&-launch{
+		animation: launch 0.3s linear ;
+	}
+	&-hidden{
+		display: none ;
+	}
+}
+
+@keyframes launch{
+	16.65% {
+		transform : translateY(-16.65%) ;
+		-webkit-transform : translateY(-16.65%) ;
+	}
+	33.3% {
+		transform : translateY(-33.3%) ;
+		-webkit-transform : translateY(-33.3%) ;
+	}
+	49.95% {
+		transform : translateY(-49.95%) ; 
+		-webkit-transform : translateY(-49.95%) ;
+	}
+	66.6% {
+		transform : translateY(-66.6%) ;
+		-webkit-transform : translateY(-66.6%) ;
+	}
+	83.25% {
+		transform : translateY(-83.25%) ; 
+		-webkit-transform : translateY(-83.25%) ;
+	}
+	100% {
+	transform : translateY(-100%) ;
+	-webkit-transform : translateY(-100%) ;
+	}
+}
+
+@keyframes land{
+	0%{
+		transform : translateY(-100%) ;
+		-webkit-transform : translateY(-100%) ;
+	}
+	16.65% {
+		transform : translateY(-83.25%) ;
+		-webkit-transform : translateY(-83.25%) ;
+	}
+	33.3% {
+		transform : translateY(-66.6%) ;
+		-webkit-transform : translateY(-66.6%) ;
+	}
+	49.95% {
+		transform : translateY(-49.95%) ; 
+		-webkit-transform : translateY(-49.95%) ;
+	}
+	66.6% {
+		transform : translateY(-33.3%) ;
+		-webkit-transform : translateY(-33.3%) ;
+	}
+	83.25% {
+		transform : translateY(-16.65%) ; 
+		-webkit-transform : translateY(-16.65%) ;
+	}
+	100% {
+	transform : translateY(0) ;
+	-webkit-transform : translateY(0) ;
+	}
+}
+
+@keyframes shake{
+	0%{
+		transform : translateY(0px) ;
+		-webkit-transform : translateY(0px) ;
+	}
+	16.65% {
+		transform : translateY(4px) ;
+		-webkit-transform : translateY(4px) ;
+	}
+	33.3% {
+		transform : translateY(8px) ;
+		-webkit-transform : translateY(8px) ;
+	}
+	49.95% {
+		transform : translateY(12px) ; 
+		-webkit-transform : translateY(12px) ;
+	}
+	66.6% {
+		transform : translateY(8px) ; 
+		-webkit-transform : translateY(8px) ;
+	}
+	83.25% {
+		transform : translateY(4px) ; 
+		-webkit-transform : translateY(4px) ;
+	}
+	100% {
+	transform : translateY(0px) ;
+	-webkit-transform : translateY(0px) ;
+	}
+}

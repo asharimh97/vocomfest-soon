@@ -1,0 +1,22 @@
+/* Bootstrap reset CSS */
+@mixin transition($time){
+	transition: all $time*1s ease-in-out ;
+	-webkit-transition: all $time*1s ease-in-out ;
+	-moz-transition: all $time*1s ease-in-out ;
+	-o-transition: all $time*1s ease-in-out ;
+}
+.btn{
+	font-family : 'Montserrat' !important ;
+}
+
+.btn-default{
+	border-radius : 0px ;
+	border : solid 2px #bcc3c6 ;
+	@include transition(0.2) ;
+
+	&:hover{
+		background : #7e8b8d ;
+		color : $white ;
+		@include transition(0.2) ;
+	}
+}

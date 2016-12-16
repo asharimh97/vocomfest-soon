@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="X-UA-Compatible" content="IE-Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Vocational Computer Festival 2017">
+	<meta name="keywords" content="vocomfest, ugm, himakomsi, computer, festival, lomba">
+	<meta name="author" content="Vocomfest Technical Support Team">
+	<meta name="robots" content="index,follow">
+
+	<title>Vocomfest</title>
+
+	<!-- CSS HERE -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/vocomfest-soon.css">
+
+	<!-- Shortcut icon -->
+	<link rel="shortcut icon" type="x-icon" href="./assets/img/icon.png">
+</head>
+<body>
+<!-- <a href="#" id="showLorem">show</a> -->
+
+<section id="main-content">
+	<div class="container-fluid bods">
+		<div class="row content-row">
+			<div class="col-md-6 content">
+				<div class="head-frame">
+					<img src="./assets/img/logo.png" class="brand-logo">
+					<h2 class="head head-title">We’re coming soon...</h2>
+					<div class="row">
+						<p class="col-md-9 head head-content">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris.
+						</p>
+					</div>
+					<p>
+						<a href="#" id="showLorem" class="btn btn-default btn-big pd-bt-5">MORE INFO</a>
+					</p>
+				</div>
+			</div>
+			<div class="col-md-6 content">
+				<div class="col-md-8 col-md-offset-2">
+					<img src="./assets/img/rocket-01.png" class="rocket" id="roket" />
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="bottom-surface">
+	<div class="land"></div>
+</section>
+
+<div id="lorem" class="lorem-hide">
+	<button id="lorem-close">close</button>
+</div>
+<!-- Javascript here -->
+<!-- <script type="text/javascript" src="./public/bundle.js"></script> -->
+<script type="text/javascript" src="./assets/js/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#showLorem').on("click", function(){
+			$('#lorem').removeClass("lorem-hide").addClass("lorem-show") ;
+			$('#roket').addClass('rocket-launch') ;
+		})
+		$('#lorem-close').on("click", function(){
+			$('#lorem').removeClass("lorem-show").addClass("lorem-hide") ;
+			$('#roket').removeClass('rocket-launch').addClass('rocket-land').addClass('rocket-shake') ;
+		}) ;
+	})
+</script>
+</body>
+</html>
