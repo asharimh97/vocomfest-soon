@@ -106,7 +106,7 @@
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out; }
   .btn-default:hover {
-    background: #7e8b8d;
+    background: #bcc3c6;
     color: #fff;
     transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
@@ -592,7 +592,12 @@ html, body {
 /* Main Components */
 #main-content {
   overflow: hidden;
-  height: 100%; }
+  z-index: 1000;
+  height: 100%;
+  background: url("../img/rocket-02.png");
+  background-size: 175px;
+  background-repeat: no-repeat;
+  background-position: bottom right; }
 
 .content {
   display: table-cell;
@@ -626,6 +631,31 @@ html, body {
   top: 50%;
   transform: translateY(-50%); }
 
+ul.social-links {
+  margin: 0;
+  padding: 0; }
+  ul.social-links li {
+    list-style: none;
+    display: inline-block;
+    margin: 3px 10px;
+    font-size: 1.25em; }
+    ul.social-links li a {
+      text-decoration: none;
+      font-style: none;
+      color: #2980b8;
+      transition: all 0.25s ease-in-out;
+      -webkit-transition: all 0.25s ease-in-out;
+      -moz-transition: all 0.25s ease-in-out;
+      -o-transition: all 0.25s ease-in-out; }
+      ul.social-links li a:hover {
+        text-decoration: none;
+        font-style: none;
+        color: #3497db;
+        transition: all 0.25s ease-in-out;
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out; }
+
 .land {
   position: absolute;
   width: 100%;
@@ -634,6 +664,71 @@ html, body {
   bottom: 0;
   left: 0; }
 
+@media (max-width: 980px) {
+  #main-content {
+    background: none; }
+
+  .bods {
+    display: block; }
+
+  .content-row {
+    display: block;
+    height: 100%; }
+
+  .content {
+    display: block;
+    overflow: hidden; }
+
+  .head-frame {
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+    text-align: center; } }
+@media (max-width: 800px) {
+  .bods {
+    padding-top: 15%;
+    padding-bottom: 5%; }
+
+  .content-row {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column-reverse;
+    overflow: hidden; }
+
+  .content {
+    flex: 1;
+    justify-content: center;
+    overflow: hidden; }
+
+  .land {
+    display: none; } }
+@media (max-width: 768px) {
+  .bods {
+    padding-top: 15%;
+    padding-bottom: 5%; }
+
+  .content-row {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column-reverse;
+    overflow: hidden; }
+
+  .content {
+    flex: 1;
+    justify-content: center;
+    overflow: hidden; }
+
+  .land {
+    display: none; } }
+@media (max-width: 480px) {
+  .brand-logo {
+    max-height: 50px; }
+
+  .head-title {
+    font-size: 2.7em !important; }
+  .head-content {
+    font-size: 1.1em !important; } }
 /* Animations CSS */
 #lorem {
   width: 100%;
@@ -652,6 +747,174 @@ html, body {
 .lorem-show {
   bottom: 0 !important; }
 
+.cloud {
+  display: none;
+  position: absolute;
+  max-width: 80px;
+  z-index: 0; }
+
+.first-cloud {
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: clouds infinite 10s linear; }
+
+.second-cloud {
+  top: 50%;
+  left: 10%;
+  animation: shortclouds infinite 7s linear; }
+
+.third-cloud {
+  top: 28%;
+  right: 25%;
+  animation: revclouds infinite 10s linear; }
+
+.forth-cloud {
+  top: 37%;
+  right: 30%;
+  animation: shortrevclouds infinite 6s linear; }
+
+.fifth-cloud {
+  top: 45%;
+  right: 10%;
+  animation: revclouds infinite 8s linear; }
+
+@keyframes clouds {
+  0% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%); }
+  10% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%); }
+  20% {
+    transform: translateX(200%);
+    -webkit-transform: translateX(200%); }
+  30% {
+    transform: translateX(300%);
+    -webkit-transform: translateX(300%); }
+  40% {
+    transform: translateX(400%);
+    -webkit-transform: translateX(400%); }
+  50% {
+    transform: translateX(500%);
+    -webkit-transform: translateX(500%); }
+  60% {
+    transform: translateX(400%);
+    -webkit-transform: translateX(400%); }
+  70% {
+    transform: translateX(300%);
+    -webkit-transform: translateX(300%); }
+  80% {
+    transform: translateX(200%);
+    -webkit-transform: translateX(200%); }
+  90% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%); }
+  100% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%); } }
+@keyframes shortclouds {
+  0% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%); }
+  10% {
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%); }
+  20% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%); }
+  30% {
+    transform: translateX(150%);
+    -webkit-transform: translateX(150%); }
+  40% {
+    transform: translateX(200%);
+    -webkit-transform: translateX(200%); }
+  50% {
+    transform: translateX(250%);
+    -webkit-transform: translateX(250%); }
+  60% {
+    transform: translateX(200%);
+    -webkit-transform: translateX(200%); }
+  70% {
+    transform: translateX(150%);
+    -webkit-transform: translateX(150%); }
+  80% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%); }
+  90% {
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%); }
+  100% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%); } }
+@keyframes revclouds {
+  0% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%); }
+  10% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%); }
+  20% {
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%); }
+  30% {
+    transform: translateX(-300%);
+    -webkit-transform: translateX(-300%); }
+  40% {
+    transform: translateX(-400%);
+    -webkit-transform: translateX(-400%); }
+  50% {
+    transform: translateX(-500%);
+    -webkit-transform: translateX(-500%); }
+  60% {
+    transform: translateX(-400%);
+    -webkit-transform: translateX(-400%); }
+  70% {
+    transform: translateX(-300%);
+    -webkit-transform: translateX(-300%); }
+  80% {
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%); }
+  90% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%); }
+  100% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%); } }
+@keyframes shortrevclouds {
+  0% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%); }
+  10% {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%); }
+  20% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%); }
+  30% {
+    transform: translateX(-150%);
+    -webkit-transform: translateX(-150%); }
+  40% {
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%); }
+  50% {
+    transform: translateX(-250%);
+    -webkit-transform: translateX(-250%); }
+  60% {
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%); }
+  70% {
+    transform: translateX(-150%);
+    -webkit-transform: translateX(-150%); }
+  80% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%); }
+  90% {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%); }
+  100% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%); } }
 .rocket {
   width: 100%; }
   .rocket-shake {
@@ -660,7 +923,13 @@ html, body {
     animation: launch 0.3s linear; }
   .rocket-hidden {
     display: none; }
+  .rocket-cloud {
+    animation: muter infinite 10s linear; }
 
+@media (max-width: 800px) {
+  .rocket {
+    width: 50%;
+    margin: 5% 25%; } }
 @keyframes launch {
   16.65% {
     transform: translateY(-16.65%);
@@ -724,5 +993,10 @@ html, body {
   100% {
     transform: translateY(0px);
     -webkit-transform: translateY(0px); } }
+@keyframes muter {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 
 /*# sourceMappingURL=vocomfest-soon.css.map */

@@ -18,6 +18,96 @@
 .lorem-show{
 	bottom : 0 !important ;
 }
+.cloud{
+	display: none ;
+	position : absolute ;
+	max-width : 80px ;
+	z-index: 0 ;
+}
+.first-cloud{
+	top : 20% ;
+	left : 50% ;
+	transform: translateX(-50%);
+	animation: clouds infinite 10s linear ;
+}
+.second-cloud{
+	top : 50% ;
+	left : 10% ;
+	animation: shortclouds infinite 7s linear ;
+}
+.third-cloud{
+	top : 28% ;
+	right : 25% ;
+	animation: revclouds infinite 10s linear ;
+}
+.forth-cloud{
+	top : 37% ;
+	right : 30% ;
+	animation: shortrevclouds infinite 6s linear ;
+}
+.fifth-cloud{
+	top : 45% ;
+	right : 10% ;
+	animation: revclouds infinite 8s linear ;
+}
+@keyframes clouds{
+	@for $i from 0 through 5{
+		#{$i*10%}{
+			transform: translateX($i*100%);
+			-webkit-transform: translateX($i*100%);
+		}
+	}
+	@for $x from 1 through 5{
+		#{($x+5)*10%}{
+			transform: translateX((5 - $x)*100%);
+			-webkit-transform: translateX((5 - $x)*100%);
+		}
+	}
+
+}
+@keyframes shortclouds{
+	@for $i from 0 through 5{
+		#{$i*10%}{
+			transform: translateX($i*50%);
+			-webkit-transform: translateX($i*50%);
+		}
+	}
+	@for $x from 1 through 5{
+		#{($x+5)*10%}{
+			transform: translateX((5 - $x)*50%);
+			-webkit-transform: translateX((5 - $x)*50%);
+		}
+	}
+
+}
+@keyframes revclouds{
+	@for $i from 0 through 5{
+		#{$i*10%}{
+			transform: translateX($i*-100%);
+			-webkit-transform: translateX($i*-100%);
+		}
+	}
+	@for $x from 1 through 5{
+		#{($x+5)*10%}{
+			transform: translateX((5 - $x)*-100%);
+			-webkit-transform: translateX((5 - $x)*-100%);
+		}
+	}
+}
+@keyframes shortrevclouds{
+	@for $i from 0 through 5{
+		#{$i*10%}{
+			transform: translateX($i*-50%);
+			-webkit-transform: translateX($i*-50%);
+		}
+	}
+	@for $x from 1 through 5{
+		#{($x+5)*10%}{
+			transform: translateX((5 - $x)*-50%);
+			-webkit-transform: translateX((5 - $x)*-50%);
+		}
+	}
+}
 .rocket{
 	width : 100% ;
 
@@ -29,6 +119,15 @@
 	}
 	&-hidden{
 		display: none ;
+	}
+	&-cloud{
+		animation : muter infinite 10s linear;
+	}
+}
+@media (max-width: 800px){
+	.rocket{
+		width : 50% ;
+		margin: 5% 25% ;
 	}
 }
 
@@ -118,5 +217,14 @@
 	100% {
 	transform : translateY(0px) ;
 	-webkit-transform : translateY(0px) ;
+	}
+}
+
+@keyframes muter{
+	from {
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
 	}
 }

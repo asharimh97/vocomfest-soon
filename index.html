@@ -41,15 +41,37 @@
 					<p>
 						<a href="#" id="showLorem" class="btn btn-default btn-big pd-bt-5">MORE INFO</a>
 					</p>
+
+					<p class="pd-bt-5 mg-t-40">
+						<ul class="social-links">
+							<li><a href="#" class="fa fa-facebook" target="_blank" title="Vocomfest 2017" alt="Vocomfest 2017"></a></li>
+							<li><a href="#" class="fa fa-twitter" target="_blank" title="Vocomfest 2017" alt="Vocomfest 2017"></a></li>
+							<li><a href="#" class="fa fa-instagram" target="_blank" title="Vocomfest 2017" alt="Vocomfest 2017"></a></li>
+							<li><a href="#" class="fa fa-google-plus" target="_blank" title="Vocomfest 2017" alt="Vocomfest 2017"></a></li>
+						</ul>
+					</p>
 				</div>
 			</div>
 			<div class="col-md-6 content">
-				<div class="col-md-8 col-md-offset-2">
-					<img src="./assets/img/rocket-01.png" class="rocket" id="roket" />
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<img src="./assets/img/rocket-01.png" class="rocket rocket-shake" id="roket" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<!-- <img src="./assets/img/cloud.png" class="rocket rocket-cloud"> -->
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- Clouds -->
+	<img src="./assets/img/cloud-04.png" class="cloud first-cloud">
+	<img src="./assets/img/cloud-06.png" class="cloud second-cloud">
+	<img src="./assets/img/cloud-05.png" class="cloud third-cloud">
+	<img src="./assets/img/cloud-05.png" class="cloud forth-cloud">
+	<img src="./assets/img/cloud-05.png" class="cloud fifth-cloud">
 </section>
 <section id="bottom-surface">
 	<div class="land"></div>
@@ -61,15 +83,17 @@
 <!-- Javascript here -->
 <!-- <script type="text/javascript" src="./public/bundle.js"></script> -->
 <script type="text/javascript" src="./assets/js/jquery.js"></script>
+<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./assets/js/modernizr.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('#showLorem').on("click", function(){
 			$('#lorem').removeClass("lorem-hide").addClass("lorem-show") ;
-			$('#roket').addClass('rocket-launch') ;
+			// $('#roket').addClass('rocket-launch') ;
 		})
 		$('#lorem-close').on("click", function(){
 			$('#lorem').removeClass("lorem-show").addClass("lorem-hide") ;
-			$('#roket').removeClass('rocket-launch').addClass('rocket-land').addClass('rocket-shake') ;
+			// $('#roket').removeClass('rocket-launch').addClass('rocket-land') ;
 		}) ;
 	})
 </script>
