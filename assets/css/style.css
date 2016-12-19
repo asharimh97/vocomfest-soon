@@ -3,7 +3,7 @@
 
 /*=========================================== STYLE =================================================*/
 *{
-	font-family: "Century Gothic";
+	font-family : "Aller Light";
 	color: #795548;
 }
 li {
@@ -17,16 +17,19 @@ li {
 	background-color: #2980B8;
 }
 #page2 {
-	background-color: #2B4457;
+	background-color: #69CCE0;
 }
 #page3 {
-	background-color: #4E4A9D;
+	background-color: #394C81;
 }
 #page4 {
 	background-color: #308694;
 }
 #menu ul {
 	background-color: #FFFFFF;
+}
+.logoPage {
+	align-items: center;
 }
 /*FIGURE IMAGES*/
 	.figLogo {
@@ -53,8 +56,8 @@ li {
 /*Heading*/
 	.textPage h2 {
 		color: #FFFFFF;
-		font-size: 2.5em;
-		font-family: "Quantify";
+		font-size: 3.5em;
+		font-family: "Bitsumishi";
 	}
 	.textPage h4 {
 		color: #FFFFFF;
@@ -62,7 +65,7 @@ li {
 		font-family: "Century Gothic";
 	}
 	h2.octa,h4.octa {
-		font-family: "Octagonal";
+		font-family: "Aller Light";
 	}
 	h2.small {
 		font-size: 1.5em;
@@ -79,13 +82,13 @@ li {
 		color: #FFFFFF;
 	}
 	.pPage2 {
-		background-color: #34495E;
-		border-left: #2C3E50 5px solid;
+		background-color: #2AA5C4;
+		border-left: #195571 5px solid;
 		color: #FFFFFF;
 	}
 	.pPage3 {
-		background-color: #745EC5;
-		border-left: #5E345E 5px solid;
+		background-color: #5065A1;
+		border-left: #1E2742 5px solid;
 		color: #FFFFFF;
 	}
 	.pPage4 {

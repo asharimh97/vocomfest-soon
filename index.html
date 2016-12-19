@@ -78,7 +78,7 @@
 </section>
 
 <div id="lorem" class="lorem-hide">
-	<button id="lorem-close">close</button>
+	<!--<button id="lorem-close">close</button>-->
 </div>
 <!-- Javascript here -->
 <!-- <script type="text/javascript" src="./public/bundle.js"></script> -->
@@ -88,7 +88,7 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('#showLorem').on("click", function(){
-			$('#lorem').removeClass("lorem-hide").addClass("lorem-show") ;
+			$('#lorem').removeClass("lorem-hide").addClass("lorem-show").load("page1.html"); ;
 			// $('#roket').addClass('rocket-launch') ;
 		})
 		$('#lorem-close').on("click", function(){

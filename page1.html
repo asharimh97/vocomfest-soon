@@ -7,6 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<script type="text/javascript" src="assets/js/jquery.waypoints.js"></script>
 	<script src="assets/js/jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="assets/vendors/scrolloverflow.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.fullPage.js"></script>
@@ -21,12 +23,19 @@
 			});
 		});
 	</script>
-
+	<link rel="shortcut icon" type="x-icon" href="./assets/img/icon.png">
 </head>
 <body>
-
+<header class="col-12 col-tab-12">
+	<div class="logoPage col-2 col-tab-2">
+		<figure class="figLogo">
+			<img src="assets/img/logo.png">
+		</figure>
+	</div>
+</header>
 <section id="menu">
 	<ul>
+		<li id="lorem-close"><a href="index.html"><img src="./assets/img/icon.png" alt="Link" /></a></li>
 		<li data-menuanchor="firstPage" class="active"><a href="#firstPage"><img src="assets/img/dot1.png" alt="Link" /></a></li>
 		<li data-menuanchor="secondPage"><a href="#secondPage"><img src="assets/img/dot2.png" alt="Link" /></a></li>
 		<li data-menuanchor="3rdPage"><a href="#3rdPage"><img src="assets/img/dot3.png" alt="Link" /></a></li>
@@ -49,21 +58,14 @@
 		</figure>
 		<figure class="figSocMed">
 			<a href="">
-				<img src="assets/img/tw.png">
+				<img src="assets/img/gplus.png">
 			</a>
 		</figure>
-
 </section>
-
 <div id="fullpage">
 <!-- Page 1 -->
 	<div class="section " id="section0">
 		<div id="page1">
-			<div class="logoPage col-2 col-tab-2">
-				<figure class="figLogo">
-					<img src="assets/img/logo.png">
-				</figure>
-			</div>
 			<div class="title">
 				<div class="textPage">
 					<h2>WEB DESIGN</h2>
@@ -72,8 +74,12 @@
 					<h4>COMPETITION</h4>
 				</div>
 			</div>
-				<figure class="col-3 col-tab-6">
-					<img src="assets/img/page1.png">
+				<figure class="figPage col-2 col-tab-6">
+					<img class="blank" src="assets/img/pageblank.png">
+					<img src="assets/img/page1-1.png">
+					<img class="animated flipInX" src="assets/img/page1-2.png">
+					<img class="animated bounceInUp" src="assets/img/page1-3.png">
+					<img class="animated bounceInDown" src="assets/img/page1-4.png">
 				</figure>
 				<p class="pPage pPage1 col-8 col-tab-10">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non nulla vitae tellus vehicula porttitor vitae quis ipsum. Phasellus rutrum sapien vitae odio sagittis venenatis. Ut curabitur posuere eleifend massa etiam per feugiat
@@ -84,11 +90,6 @@
 <!-- Page 2 -->
 	<div class="section" id="section1">
 		<div id="page2">
-			<div class="logoPage col-2 col-tab-2">
-				<figure class="figLogo">
-					<img src="assets/img/logo.png">
-				</figure>
-			</div>
 			<div class="title">
 				<div class="textPage">
 					<h2>MOBILE APPS</h2>
@@ -98,8 +99,11 @@
 					<h4>COMPETITION</h4>
 				</div>
 			</div>
-				<figure class="figPage1 col-3 col-tab-6">
-					<img src="assets/img/page2.png">
+				<figure class="figPage col-2 col-tab-6">
+					<img class="blank" src="assets/img/pageblank.png">
+					<img src="assets/img/page2-1.png">
+					<img class="animated bounceInDown" src="assets/img/page2-2.png">
+					<img class="animated flipInX" src="assets/img/page2-3.png">
 				</figure>
 				<p class="pPage pPage2 col-8 col-tab-10">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -113,22 +117,22 @@
 <!-- Page 3 -->
 	<div class="section" id="section2">
 		<div id="page3">
-			<div class="logoPage col-2 col-tab-2">
-				<figure class="figLogo">
-					<img src="assets/img/logo.png">
-				</figure>
-			</div>
 			<div class="title">
 				<div class="textPage textPageSmall">
-					<h2 class="small">INTERNATIONAL COLLEGIATE</h2>
+					<h2 class="small">INTERNATIONAL</h2>
+					<h2 class="small">COLLEGIATE</h2>
 				</div>
 				<div class="textPage textPage2">
 					<h2 class="octa big">PROGRAMMING</h2>
 					<h4>CONTEST</h4>
 				</div>
 			</div>
-				<figure class="col-3 col-tab-6">
-					<img src="assets/img/page3.png">
+				<figure class="figPage col-2 col-tab-6">
+					<img class="blank" src="assets/img/pageblank.png">
+					<img src="assets/img/page3-1.png">
+					<img class="animated bounceInDown" src="assets/img/page3-2.png">
+					<img class="animated bounceInUp" src="assets/img/page3-3.png">
+					<img class="animated flipInX" src="assets/img/page3-4.png">
 				</figure>
 				<p class="pPage pPage3 col-8 col-tab-10">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -142,11 +146,6 @@
 <!-- Page 4 -->
 	<div class="section" id="section3">
 		<div id="page4">
-			<div class="logoPage col-2 col-tab-2">
-				<figure class="figLogo">
-					<img src="assets/img/logo.png">
-				</figure>
-			</div>
 			<div class="title">
 				<div class="textPage textPageSmall">
 					<h2>SEMINAR</h2>
@@ -155,8 +154,12 @@
 					<h4>NASIONAL</h4>
 				</div>
 			</div>
-				<figure class="col-2 col-tab-6">
-					<img src="assets/img/page4.png">
+				<figure class="figPage col-2 col-tab-6">
+					<img class="blank" src="assets/img/pageblank.png">
+					<img src="assets/img/page4-1.png">
+					<img class="animated flipInX" src="assets/img/page4-2.png">
+					<img class="animated bounceInDown" src="assets/img/page4-3.png">
+					<img class="animated bounceInUp" src="assets/img/page4-4.png">
 				</figure>
 				<p class="pPage pPage4 col-8 col-tab-10">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. 

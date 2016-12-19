@@ -78,13 +78,29 @@ figure img {
 	display: flex;
 	flex-direction: column;
 }
-.logoPage {
-	/*position: fixed;
-    top: 20px;*/
+header {
+	position: fixed;
+	top: 20px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
 }
-.figLogo {
-	padding: 10px 20px;
-}
+/* FIGURE AND IMAGES*/
+	.figLogo {
+		padding: 10px 20px;
+	}
+	.figPage {
+		position: relative;
+		overflow: hidden;
+	}
+	.figPage img.blank {
+		position: relative;
+	}
+	.figPage img {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
 .textPage {
 	float: left;
 	margin: 30px 0 20px;
@@ -98,7 +114,7 @@ figure img {
 		position: fixed;
 		right: 0;
 		width: 30px;
-		z-index: 100;
+		z-index: 3;
 	}
 	#menu ul {
 		width: 100%;
