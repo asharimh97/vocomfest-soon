@@ -4,6 +4,9 @@
 /*=========================================== STYLE =================================================*/
 *{
 	font-family : "Aller Light";
+	-o-font-family : "Aller Light";
+	-ms-font-family : "Aller Light";
+	-webkit-font-family : "Aller Light";
 	color: #795548;
 }
 li {
@@ -45,34 +48,33 @@ li {
 	display: block;
 }
 .textPage {
-	text-align: right;
-	border-right: 1px #FFFFFF solid;
 	padding: 0 20px;
 }
 .textPage2 {
 	border: none;
-	text-align: left;
 }
+.textPage h2, .textPage h4 {
+		text-align: center;
+	}
 /*Heading*/
 	.textPage h2 {
 		color: #FFFFFF;
-		font-size: 3.5em;
+		font-size: 2em;
 		font-family: "Bitsumishi";
 	}
 	.textPage h4 {
 		color: #FFFFFF;
-		font-size: 2em;
+		font-size: 1.5em;
 		font-family: "Century Gothic";
 	}
 	h2.octa,h4.octa {
 		font-family: "Aller Light";
 	}
-	h2.small {
+	.textPage h2.small {
 		font-size: 1.5em;
-		text-align: right;
 	}
-	h2.big {
-		font-size: 3.5em;
+	.textPage h2.big {
+		font-size: 2em;
 		text-align: right;
 	}
 /*Paragraph*/
@@ -96,3 +98,51 @@ li {
 		border-left: #336666 5px solid;
 		color: #FFFFFF;
 	}
+
+/*------------------------------------------------For Tablet*/
+@media only screen and (min-width:481px) {
+	/*Heading*/
+	.textPage {
+		border: none;
+	}
+	.textPage h2 {
+		font-size: 2.5em;
+	}
+	.textPage h4 {
+		font-size: 2em;
+	}
+	.textPage h2.small {
+		font-size: 1.5em;
+	}
+	.textPage h2.big {
+		font-size: 2.5em;
+	}
+}
+
+/*-----------------------------------------------For Dekstop*/
+@media only screen and (min-width:721px) {
+	.textPage h2 {
+		font-size: 3.5em;
+	}
+	.textPage h4 {
+		font-size: 2em;
+	}
+	.textPage h2.small {
+		font-size: 1.5em;
+	}
+	.textPage h2.big {
+		font-size: 3.5em;
+	}
+	.textPage {
+		border-right: 1px #FFFFFF solid;
+		text-align: right;
+	}
+	.textPage2 {
+		border: none;
+		text-align: left;
+	}
+	.textPage h2.small {
+		font-size: 1.5em;
+		text-align: right;
+	}
+}

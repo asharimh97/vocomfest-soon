@@ -1,62 +1,5 @@
 @charset "utf-8";
 /* CSS Document */
-
-/*===================================================RESPONSIVE==============================================================*/
-.row::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-/*For Mobile Phones*/
-[class*="col-"] {
-	width: 100%;	
-}
-
-/*------------------------------------------------For Tablet*/
-@media only screen and (min-width:481px) {
-	.col-tab-1 {width:8.33%;}	
-	.col-tab-2 {width:16.66%;}
-	.col-tab-3 {width:25%;}
-	.col-tab-3-1 {width:23%;}
-	.col-tab-3-3 {width: 30.3%;}
-	.col-tab-4 {width:33.33%;}
-	.col-tab-5 {width:41.66%;}
-	.col-tab-5-1 {width:46.6%;}
-	.col-tab-6 {width:50%;}
-	.col-tab-7 {width:58.33%;}
-	.col-tab-8 {width:66.66%;}
-	.col-tab-8-1 {width:69%;}
-	.col-tab-9 {width:75%;}
-	.col-tab-10 {width:83.33%;}
-	.col-tab-11 {width:91.66%;}
-	.col-tab-12 {width:100%;}
-}
-
-/*-----------------------------------------------For Dekstop*/
-@media only screen and (min-width:721px) {
-	.col-1 {width:8.33%;}	
-	.col-2 {width:16.66%;}
-	.col-3 {width:25%;}
-	.col-3-1 {width:23%;}
-	.col-3-2 {width: 27.5%;}
-	.col-3-3 {width: 30.3%;}
-	.col-4-1 {width:29.3%;}
-	.col-4-2 {width:32.7%;}
-	.col-4 {width:33.33%;}
-	.col-5 {width:41.66%;}
-	.col-5-1 {width:46.6%;}
-	.col-6 {width:50%;}
-	.col-7 {width:58.33%;}
-	.col-8 {width:66.66%;}
-	.col-8-1 {width:69.5%;}
-	.col-9 {width:75%;}
-	.col-10 {width:83.33%;}
-	.col-11 {width:91.66%;}
-	.col-12 {width:100%;}
-
-	/*END OF SLIDER LAYOUT AND STYLE*/
-}
-
 /*=========================================== LAYOUT =================================================*/
 * {
 	padding: 0;
@@ -64,7 +7,7 @@
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-ms-box-sizing: border-box;
-	-o-	box-sizing: border-box;
+	-o-box-sizing: border-box;
 }
 figure img {
 	width: 100%;
@@ -77,6 +20,7 @@ figure img {
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
+	padding-top: 12%;
 }
 header {
 	position: fixed;
@@ -97,13 +41,14 @@ header {
 		position: relative;
 	}
 	.figPage img {
+		width: 100%;
+		height:auto;
 		position: absolute;
 		top: 0;
 		left: 0;
 	}
 .textPage {
-	float: left;
-	margin: 30px 0 20px;
+	margin: 8px 0 0px;
 }
 .pPage {
 	padding: 20px;
@@ -131,4 +76,86 @@ header {
 .figSocMed {
 	padding: 5px 0;
 	margin: 5px 0;
+}
+/*===================================================RESPONSIVE==============================================================*/
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/*For Mobile Phones*/
+[class*="col-"] {
+	width: 100%;	
+}
+	.logoPage {
+		width: 30%;
+	}
+	.figPage {
+		width: 55%;
+	}
+
+/*------------------------------------------------For Tablet*/
+@media only screen and (min-width:481px) {
+	.col-tab-1 {width:8.33%;}	
+	.col-tab-2 {width:16.66%;}
+	.col-tab-3 {width:25%;}
+	.col-tab-3-1 {width:23%;}
+	.col-tab-3-3 {width: 30.3%;}
+	.col-tab-4 {width:33.33%;}
+	.col-tab-5 {width:41.66%;}
+	.col-tab-5-1 {width:46.6%;}
+	.col-tab-6 {width:50%;}
+	.col-tab-7 {width:58.33%;}
+	.col-tab-8 {width:66.66%;}
+	.col-tab-8-1 {width:69%;}
+	.col-tab-9 {width:75%;}
+	.col-tab-10 {width:83.33%;}
+	.col-tab-11 {width:91.66%;}
+	.col-tab-12 {width:100%;}
+
+	#page1,#page2,#page3,#page4,#menu{
+		padding-top: 5%;
+	}
+	/* FIGURE AND IMAGES*/
+	.figLogo {
+		padding: 10px 10px;
+	}
+	.figPage img {
+		width: 100%;
+	}
+}
+
+/*-----------------------------------------------For Dekstop*/
+@media only screen and (min-width:721px) {
+	.col-1 {width:8.33%;}	
+	.col-2 {width:16.66%;}
+	.col-3 {width:25%;}
+	.col-3-1 {width:23%;}
+	.col-3-2 {width: 27.5%;}
+	.col-3-3 {width: 30.3%;}
+	.col-4-1 {width:29.3%;}
+	.col-4-2 {width:32.7%;}
+	.col-4 {width:33.33%;}
+	.col-5 {width:41.66%;}
+	.col-5-1 {width:46.6%;}
+	.col-6 {width:50%;}
+	.col-7 {width:58.33%;}
+	.col-8 {width:66.66%;}
+	.col-8-1 {width:69.5%;}
+	.col-9 {width:75%;}
+	.col-10 {width:83.33%;}
+	.col-11 {width:91.66%;}
+	.col-12 {width:100%;}
+
+	#page1,#page2,#page3,#page4,#menu{
+		padding-top: 0px;
+	}
+	.textPage {
+		float: left;
+		margin: 30px 0 20px;
+	}
+	.figPage img {
+		width: 100%;
+	}
+	/*END OF SLIDER LAYOUT AND STYLE*/
 }

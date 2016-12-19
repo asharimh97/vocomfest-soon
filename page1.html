@@ -4,12 +4,15 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Content</title>
+
 	<link rel="stylesheet" type="text/css" href="assets/css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/vocomfest-soon.css">
+
+	<script type="text/javascript" src="assets/js/jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.waypoints.js"></script>
-	<script src="assets/js/jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="assets/vendors/scrolloverflow.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="assets/js/examples.js"></script>
@@ -19,8 +22,37 @@
 			  sectionsColor: ['#2980B8', '#2B4457', '#4E4A9D', '#308694'],
 			  anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
 			  menu: '#menu',
-			  continuousVertical: true
+			  continuousVertical: true,
+			  onLeave: function(index, nextIndex, direction){
+			  	if( index == 1 && nextIndex == 2 ) {
+				$('#BIU2').addClass('animated bounceInUp');
+				$('#BID2').addClass('animated bounceInDown');
+				}
+				else if(( index == 1 || index == 2 ) && nextIndex == 3 ) {
+				$('#FIX3').addClass('animated flipInX');
+				$('#BIU3').addClass('animated bounceInUp');
+				$('#BID3').addClass('animated bounceInDown');
+				$('#BIU2').removeClass('animated bounceInUp');
+				$('#BID2').removeClass('animated bounceInDown');}
+				else if(( index == 1 || index == 2 || index == 3) && nextIndex == 4 ) {
+				$('#FIX4').addClass('animated flipInX');
+				$('#BIU4').addClass('animated bounceInUp');
+				$('#BID4').addClass('animated bounceInDown');
+				$('#FIX3').removeClass('animated flipInX');
+				$('#BIU3').removeClass('animated bounceInUp');
+				$('#BID3').removeClass('animated bounceInDown');
+				}
+				else if(index == 4){
+				$('#FIX4').removeClass('animated flipInX');
+				$('#BIU4').removeClass('animated bounceInUp');
+				$('#BID4').removeClass('animated bounceInDown');
+				}
+			},
 			});
+			$('#lorem-close').on("click", function(){
+			$('#lorem').removeClass("lorem-show").addClass("lorem-hide");
+			// $('#roket').removeClass('rocket-launch').addClass('rocket-land') ;
+		}) ;
 		});
 	</script>
 	<link rel="shortcut icon" type="x-icon" href="./assets/img/icon.png">
@@ -74,14 +106,14 @@
 					<h4>COMPETITION</h4>
 				</div>
 			</div>
-				<figure class="figPage col-2 col-tab-6">
+				<figure class="figPage col-2 col-tab-4">
 					<img class="blank" src="assets/img/pageblank.png">
 					<img src="assets/img/page1-1.png">
 					<img class="animated flipInX" src="assets/img/page1-2.png">
 					<img class="animated bounceInUp" src="assets/img/page1-3.png">
 					<img class="animated bounceInDown" src="assets/img/page1-4.png">
 				</figure>
-				<p class="pPage pPage1 col-8 col-tab-10">
+				<p class="pPage pPage1 col-8 col-tab-11">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non nulla vitae tellus vehicula porttitor vitae quis ipsum. Phasellus rutrum sapien vitae odio sagittis venenatis. Ut curabitur posuere eleifend massa etiam per feugiat
 				</p>
 		</div>
@@ -99,13 +131,13 @@
 					<h4>COMPETITION</h4>
 				</div>
 			</div>
-				<figure class="figPage col-2 col-tab-6">
+				<figure class="figPage col-2 col-tab-4">
 					<img class="blank" src="assets/img/pageblank.png">
 					<img src="assets/img/page2-1.png">
-					<img class="animated bounceInDown" src="assets/img/page2-2.png">
-					<img class="animated flipInX" src="assets/img/page2-3.png">
+					<img id="BID2" src="assets/img/page2-3.png">
+					<img id="BIU2" src="assets/img/page2-2.png">
 				</figure>
-				<p class="pPage pPage2 col-8 col-tab-10">
+				<p class="pPage pPage2 col-8 col-tab-11">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 		Donec non nulla vitae tellus vehicula porttitor vitae quis ipsum. 
 		Phasellus rutrum sapien vitae odio sagittis venenatis. Ut curabitur 
@@ -127,14 +159,14 @@
 					<h4>CONTEST</h4>
 				</div>
 			</div>
-				<figure class="figPage col-2 col-tab-6">
+				<figure class="figPage col-2 col-tab-4">
 					<img class="blank" src="assets/img/pageblank.png">
 					<img src="assets/img/page3-1.png">
-					<img class="animated bounceInDown" src="assets/img/page3-2.png">
-					<img class="animated bounceInUp" src="assets/img/page3-3.png">
-					<img class="animated flipInX" src="assets/img/page3-4.png">
+					<img id="BID3" src="assets/img/page3-2.png">
+					<img id="BIU3" src="assets/img/page3-3.png">
+					<img id="FIX3" src="assets/img/page3-4.png">
 				</figure>
-				<p class="pPage pPage3 col-8 col-tab-10">
+				<p class="pPage pPage3 col-8 col-tab-11">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 		Donec non nulla vitae tellus vehicula porttitor vitae quis ipsum. 
 		Phasellus rutrum sapien vitae odio sagittis venenatis. Ut curabitur 
@@ -154,14 +186,14 @@
 					<h4>NASIONAL</h4>
 				</div>
 			</div>
-				<figure class="figPage col-2 col-tab-6">
+				<figure class="figPage col-2 col-tab-4">
 					<img class="blank" src="assets/img/pageblank.png">
 					<img src="assets/img/page4-1.png">
-					<img class="animated flipInX" src="assets/img/page4-2.png">
-					<img class="animated bounceInDown" src="assets/img/page4-3.png">
-					<img class="animated bounceInUp" src="assets/img/page4-4.png">
+					<img id="FIX4" src="assets/img/page4-2.png">
+					<img id="BID4" src="assets/img/page4-3.png">
+					<img id="BIU4" src="assets/img/page4-4.png">
 				</figure>
-				<p class="pPage pPage4 col-8 col-tab-10">
+				<p class="pPage pPage4 col-8 col-tab-11">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 		Donec non nulla vitae tellus vehicula porttitor vitae quis ipsum. 
 		Phasellus rutrum sapien vitae odio sagittis venenatis. Ut curabitur 
