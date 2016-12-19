@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*=========================================== STYLE =================================================*/
+*{
+	font-family: "Century Gothic";
+	color: #795548;
+}
+li {
+	list-style-type: none;
+}
+#page1,#page2,#page3,#page4,#menu {
+	justify-content: center;
+	align-items: center;
+}
+#page1 {
+	background-color: #2980B8;
+}
+#page2 {
+	background-color: #2B4457;
+}
+#page3 {
+	background-color: #4E4A9D;
+}
+#page4 {
+	background-color: #308694;
+}
+#menu ul {
+	background-color: #FFFFFF;
+}
+/*FIGURE IMAGES*/
+	.figLogo {
+		background-color: #FFFFFF;
+		border-radius: 20px;
+		box-shadow: 3px 4px 9px rgba(0,0,0,0.2);
+	}
+	.figSocMed {
+		border-bottom: 1px solid #FFFFFF; 
+		border-top: 1px solid #FFFFFF; 
+	}
+.title {
+	display: block;
+}
+.textPage {
+	text-align: right;
+	border-right: 1px #FFFFFF solid;
+	padding: 0 20px;
+}
+.textPage2 {
+	border: none;
+	text-align: left;
+}
+/*Heading*/
+	.textPage h2 {
+		color: #FFFFFF;
+		font-size: 2.5em;
+		font-family: "Quantify";
+	}
+	.textPage h4 {
+		color: #FFFFFF;
+		font-size: 2em;
+		font-family: "Century Gothic";
+	}
+	h2.octa,h4.octa {
+		font-family: "Octagonal";
+	}
+	h2.small {
+		font-size: 1.5em;
+		text-align: right;
+	}
+	h2.big {
+		font-size: 3.5em;
+		text-align: right;
+	}
+/*Paragraph*/
+	.pPage1 {
+		background-color: #23a7f1;
+		border-left: #0177c1 5px solid;
+		color: #FFFFFF;
+	}
+	.pPage2 {
+		background-color: #34495E;
+		border-left: #2C3E50 5px solid;
+		color: #FFFFFF;
+	}
+	.pPage3 {
+		background-color: #745EC5;
+		border-left: #5E345E 5px solid;
+		color: #FFFFFF;
+	}
+	.pPage4 {
+		background-color: #3898AA;
+		border-left: #336666 5px solid;
+		color: #FFFFFF;
+	}
