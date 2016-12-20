@@ -22,6 +22,9 @@ figure img {
 	flex-direction: column;
 	padding-top: 12%;
 }
+#page1,#page2,#page3,#page4 {
+	padding-right: 30px;
+}
 header {
 	position: fixed;
 	top: 20px;
@@ -31,7 +34,7 @@ header {
 }
 /* FIGURE AND IMAGES*/
 	.figLogo {
-		padding: 10px 20px;
+		padding: 5% 10%;
 	}
 	.figPage {
 		position: relative;
@@ -115,10 +118,14 @@ header {
 
 	#page1,#page2,#page3,#page4,#menu{
 		padding-top: 5%;
+		padding-right: 0;
+	}
+	#page1,#page2,#page3,#page4 {
+		padding-right: 20px;
 	}
 	/* FIGURE AND IMAGES*/
 	.figLogo {
-		padding: 10px 10px;
+		padding: 5% 10%;
 	}
 	.figPage img {
 		width: 100%;
@@ -149,6 +156,7 @@ header {
 
 	#page1,#page2,#page3,#page4,#menu{
 		padding-top: 0px;
+		padding-right: 0;
 	}
 	.textPage {
 		float: left;

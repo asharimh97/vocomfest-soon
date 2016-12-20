@@ -2,11 +2,28 @@
 /* CSS Document */
 
 /*=========================================== STYLE =================================================*/
+/* FONT */
+	@font-face {
+	  font-family: "Aller-Light";
+	  src: url("../fonts/Aller-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Aller-Light.woff") format("woff"), url("../fonts/Aller-Light.ttf") format("truetype"), url("../fonts/Aller-Light.svg#Aller-Light") format("svg");
+	  font-weight: normal;
+	  font-style: normal; 
+	}
+	@font-face {
+		font-family: "Bitsumishi";
+		src: url(../fonts/BITSUMIS.ttf) format("truetype");
+		font-weight: normal;
+	  	font-style: normal; 
+	}
+	@font-face {
+		font-family: "Arciform";
+		src: url(../fonts/Arciform.otf);
+		font-weight: normal;
+	  	font-style: normal; 
+	}
+
 *{
-	font-family : "Aller Light";
-	-o-font-family : "Aller Light";
-	-ms-font-family : "Aller Light";
-	-webkit-font-family : "Aller Light";
+	font-family : "Aller-Light";
 	color: #795548;
 }
 li {
@@ -40,10 +57,6 @@ li {
 		border-radius: 20px;
 		box-shadow: 3px 4px 9px rgba(0,0,0,0.2);
 	}
-	.figSocMed {
-		border-bottom: 1px solid #FFFFFF; 
-		border-top: 1px solid #FFFFFF; 
-	}
 .title {
 	display: block;
 }
@@ -68,7 +81,7 @@ li {
 		font-family: "Century Gothic";
 	}
 	h2.octa,h4.octa {
-		font-family: "Aller Light";
+		font-family: "Aller-Light";
 	}
 	.textPage h2.small {
 		font-size: 1.5em;
