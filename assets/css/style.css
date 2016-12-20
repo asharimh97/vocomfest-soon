@@ -127,6 +127,7 @@ a {
 	}
 	.pPage1,.pPage2,.pPage3,.pPage4 {
 		font-size: 0.9em;
+		text-align: center;
 		box-shadow: 3px 4px 9px rgba(0,0,0,0.2);
 	}
 /* Last Page */

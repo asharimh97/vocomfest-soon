@@ -20,7 +20,6 @@ figure img {
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
-	padding-top: 13%;
 }
 #page1,#page2,#page3,#page4,#page5 {
 	padding-right: 30px;
@@ -32,8 +31,7 @@ header {
 	position: fixed;
 	top: 20px;
     z-index: 3;
-    display: flex;
-    flex-direction: column;
+    display: none;
 }
 /* FIGURE AND IMAGES*/
 	.figLogo {
@@ -143,8 +141,10 @@ header {
 	.col-tab-11 {width:91.66%;}
 	.col-tab-12 {width:100%;}
 
+	header {
+		display: block;
+	}
 	#page1,#page2,#page3,#page4,#page5,#menu{
-		padding-top: 5%;
 		padding-right: 0;
 	}
 	#page1,#page2,#page3,#page4,.logoPage {
@@ -161,6 +161,8 @@ header {
 		width: 100%;
 	}
 	.logoPage {
+		float:left;
+		padding-left: 3%;
 		width: 20%;
 	}
 }
@@ -187,6 +189,9 @@ header {
 	.col-11 {width:91.66%;}
 	.col-12 {width:100%;}
 
+	header {
+		display: block;
+	}
 	#page1,#page2,#page3,#page4,#menu{
 		padding-top: 0px;
 		padding-right: 0;
@@ -201,6 +206,10 @@ header {
 	#page5 {
 		padding-left: 0;
 		padding-right: 0;
+	}
+	.logoPage {
+		float: none;
+		padding-left: 0;
 	}
 	/*END OF SLIDER LAYOUT AND STYLE*/
 }
