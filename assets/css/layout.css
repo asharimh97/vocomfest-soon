@@ -25,6 +25,9 @@ figure img {
 #page1,#page2,#page3,#page4 {
 	padding-right: 30px;
 }
+.logoPage {
+	padding-right:20px;
+}
 header {
 	position: fixed;
 	top: 20px;
@@ -91,7 +94,7 @@ header {
 	width: 100%;	
 }
 	.logoPage {
-		width: 30%;
+		width: 35%;
 	}
 	.figPage {
 		width: 55%;
@@ -120,7 +123,7 @@ header {
 		padding-top: 5%;
 		padding-right: 0;
 	}
-	#page1,#page2,#page3,#page4 {
+	#page1,#page2,#page3,#page4,.logoPage {
 		padding-right: 20px;
 	}
 	/* FIGURE AND IMAGES*/
@@ -129,6 +132,9 @@ header {
 	}
 	.figPage img {
 		width: 100%;
+	}
+	.logoPage {
+		width: 20%;
 	}
 }
 
