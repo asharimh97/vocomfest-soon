@@ -20,7 +20,7 @@ figure img {
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
-	padding-top: 12%;
+	padding-top: 13%;
 }
 #page1,#page2,#page3,#page4 {
 	padding-right: 30px;
@@ -74,6 +74,9 @@ header {
 	}
 	#menu ul li img {
 		width:16px;
+	}
+	#menu ul li#lorem-close img {
+		width:20px;
 	}
 	#menu ul li {
 		margin: 7px 0;

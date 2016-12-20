@@ -25,29 +25,30 @@
 			  continuousVertical: true,
 			  onLeave: function(index, nextIndex, direction){
 			  	if( index == 1 && nextIndex == 2 ) {
-				$('#BIU2').addClass('animated bounceInUp');
-				$('#BID2').addClass('animated bounceInDown');
+					$('#FIX2').addClass('animated flipInX');
+					$('#BIU2').addClass('animated bounceInUp');
+					$('#BID2').addClass('animated bounceInDown');
 				}
 				else if(( index == 1 || index == 2 ) && nextIndex == 3 ) {
-				$('#FIX3').addClass('animated flipInX');
-				$('#BIU3').addClass('animated bounceInUp');
-				$('#BID3').addClass('animated bounceInDown');
-				$('#BIU2').removeClass('animated bounceInUp');
-				$('#BID2').removeClass('animated bounceInDown');}
+					$('#BIU3').addClass('animated bounceInUp');
+					$('#BID3').addClass('animated bounceInDown');
+					$('#FIX2').removeClass('animated flipInX');
+					$('#BIU2').removeClass('animated bounceInUp');
+					$('#BID2').removeClass('animated bounceInDown');
+				}
 				else if(( index == 1 || index == 2 || index == 3) && nextIndex == 4 ) {
 				$('#FIX4').addClass('animated flipInX');
 				$('#BIU4').addClass('animated bounceInUp');
 				$('#BID4').addClass('animated bounceInDown');
-				$('#FIX3').removeClass('animated flipInX');
-				$('#BIU3').removeClass('animated bounceInUp');
-				$('#BID3').removeClass('animated bounceInDown');
+					$('#BIU3').removeClass('animated bounceInUp');
+					$('#BID3').removeClass('animated bounceInDown');
 				}
 				else if(index == 4){
 				$('#FIX4').removeClass('animated flipInX');
 				$('#BIU4').removeClass('animated bounceInUp');
 				$('#BID4').removeClass('animated bounceInDown');
 				}
-			},
+				},
 			});
 			$('#lorem-close').on("click", function(){
 			$('#lorem').removeClass("lorem-show").addClass("lorem-hide");
@@ -116,7 +117,7 @@
 					<img id="BID1" class="animated bounceInDown" src="assets/img/page1-4.png">
 				</figure>
 				<p class="pPage pPage1 col-8 col-tab-11">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non nulla vitae tellus vehicula porttitor vitae quis ipsum. Phasellus rutrum sapien vitae odio sagittis venenatis. Ut curabitur posuere eleifend massa etiam per feugiat
+					Web Design Competition ini merupakan rangkaian acara pertama sekaligus pembukaan dari VOCOMFEST 2017, WDC merupakan kompetisi membuat desain website, kompetisi ini ditujukan untuk siswa SMA/SMK/MA sederajat yang sudah bisa maupun masih belajar dalam mengembangkan website. WDC VOCOMFEST 2017 bertemakan "<b>Innovative Website to Educate Moral Citizen</b>". Dengan tema tersebut diharapkan kompetisi ini dapat  menciptakan masyarakat yang bermoral baik untuk mencapai kesjahteraan sosial.
 				</p>
 		</div>
 	</div>
@@ -124,33 +125,6 @@
 <!-- Page 2 -->
 	<div class="section" id="section1">
 		<div id="page2">
-			<div class="title">
-				<div class="textPage">
-					<h2>MOBILE APPS</h2>
-				</div>
-				<div class="textPage textPage2">
-					<h4 class="octa">DEVELOPMENT</h4>
-					<h4>COMPETITION</h4>
-				</div>
-			</div>
-				<figure class="figPage col-2 col-tab-4">
-					<img class="blank" src="assets/img/pageblank.png">
-					<img src="assets/img/page2-1.png">
-					<img id="BID2" src="assets/img/page2-3.png">
-					<img id="BIU2" src="assets/img/page2-2.png">
-				</figure>
-				<p class="pPage pPage2 col-8 col-tab-11">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-		Donec non nulla vitae tellus vehicula porttitor vitae quis ipsum. 
-		Phasellus rutrum sapien vitae odio sagittis venenatis. Ut curabitur 
-		posuere eleifend massa etiam per feugiat
-				</p>
-		</div>
-	</div>
-
-<!-- Page 3 -->
-	<div class="section" id="section2">
-		<div id="page3">
 			<div class="title">
 				<div class="textPage textPageSmall">
 					<h2 class="small">INTERNATIONAL</h2>
@@ -164,15 +138,36 @@
 				<figure class="figPage col-2 col-tab-4">
 					<img class="blank" src="assets/img/pageblank.png">
 					<img src="assets/img/page3-1.png">
-					<img id="BID3" src="assets/img/page3-2.png">
-					<img id="BIU3" src="assets/img/page3-3.png">
-					<img id="FIX3" src="assets/img/page3-4.png">
+					<img id="BID2" src="assets/img/page3-2.png">
+					<img id="BIU2" src="assets/img/page3-3.png">
+					<img id="FIX2" src="assets/img/page3-4.png">
+				</figure>
+				<p class="pPage pPage2 col-8 col-tab-11">
+					International Collegiate Programming Contest merupakan rangkaian acara kedua dari VOCOMFEST 2017, ICPC merupakan kompetisi pemrograman antar universitas yang diselenggarakan di bawah asuhan Association for Computing Machinery (ACM). Kompetisi ini terdiri dari beberapa tingkatan dimulai dari provincial (wilayah dalam negara), regional (antar negara), dan world final. Informasi lebih lanjut mengenai ACM-ICPC bisa diperiksa di link berikut : <a href="icpc.baylor.edu">icpc.baylor.edu</a>
+				</p>
+		</div>
+	</div>
+
+<!-- Page 3 -->
+	<div class="section" id="section2">
+		<div id="page3">
+			<div class="title">
+				<div class="textPage">
+					<h2>MOBILE APPS</h2>
+				</div>
+				<div class="textPage textPage2">
+					<h4 class="octa">DEVELOPMENT</h4>
+					<h4>COMPETITION</h4>
+				</div>
+			</div>
+				<figure class="figPage col-2 col-tab-4">
+					<img class="blank" src="assets/img/pageblank.png">
+					<img src="assets/img/page2-1.png">
+					<img id="BID3" src="assets/img/page2-3.png">
+					<img id="BIU3" src="assets/img/page2-2.png">
 				</figure>
 				<p class="pPage pPage3 col-8 col-tab-11">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-		Donec non nulla vitae tellus vehicula porttitor vitae quis ipsum. 
-		Phasellus rutrum sapien vitae odio sagittis venenatis. Ut curabitur 
-		posuere eleifend massa etiam per feugiat
+					Mobile Apps Development Competition merupakan rangkaian acara ketiga VOCOMFEST 2017, MADC merupakan kompetisi  membangun aplikasi mobile yang berbasis platform Android. Kompetisi ini terbuka bagi mahasiswa aktif dari Perguruan Tinggi di Indonesia. MADC VOCOMFEST 2017 bertemakan "<b>Impactful Apps for Citizen Mutualism</b>". Dengan tema tersebut diharapkan kompetisi ini mampu memberikan konstribusi yang nyata dalam generasi baru developer aplikasi mobile yang tidak hanya pintar dalam programming namun juga memikirkan efek dari aplikasi mobile yg dihasilkan bisa membantu masyarakat untuk mencapai kesejahteraan sosial.
 				</p>
 		</div>
 	</div>
@@ -196,10 +191,7 @@
 					<img id="BIU4" src="assets/img/page4-4.png">
 				</figure>
 				<p class="pPage pPage4 col-8 col-tab-11">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-		Donec non nulla vitae tellus vehicula porttitor vitae quis ipsum. 
-		Phasellus rutrum sapien vitae odio sagittis venenatis. Ut curabitur 
-		posuere eleifend massa etiam per feugiat
+					Seminar Nasional ini merupakan acara keempat sekaligus acara puncak dari rangkaian acara VOCOMFEST 2017. Seminar Nasional VOCOMFEST 2017 mengangkat tema “<b>Improving Indonesia's Economy through Creative</b>”. Seminar ini bertujuan untuk memberikan informasi kepada peserta mengenai strategi usaha di jaman sekarang, dengan pemanfataan teknologi, dan menyampaikan kepada masyarakat tentang pentingnya bergerak membangun perekonomian yang modern serta dengan seminar ini diharapkan masyarakat lebih mengerti mengenai pentingnya peran perekonomian suatu negara untuk terwujudnya kesejahteraan sosial.
 				</p>
 		</div>
 	</div>

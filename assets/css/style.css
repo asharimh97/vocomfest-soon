@@ -29,6 +29,9 @@
 li {
 	list-style-type: none;
 }
+a {
+	color: #69cce0;
+}
 #page1,#page2,#page3,#page4,#menu {
 	justify-content: center;
 	align-items: center;
@@ -37,10 +40,10 @@ li {
 	background-color: #2980B8;
 }
 #page2 {
-	background-color: #69CCE0;
+	background-color: #394C81;
 }
 #page3 {
-	background-color: #394C81;
+	background-color: #69CCE0;
 }
 #page4 {
 	background-color: #308694;
@@ -100,19 +103,22 @@ li {
 		color: #FFFFFF;
 	}
 	.pPage2 {
-		background-color: #2AA5C4;
-		border-left: #195571 5px solid;
+		background-color: #5065A1;
+		border-left: #1E2742 5px solid;
 		color: #FFFFFF;
 	}
 	.pPage3 {
-		background-color: #5065A1;
-		border-left: #1E2742 5px solid;
+		background-color: #2AA5C4;
+		border-left: #195571 5px solid;
 		color: #FFFFFF;
 	}
 	.pPage4 {
 		background-color: #3898AA;
 		border-left: #336666 5px solid;
 		color: #FFFFFF;
+	}
+	.pPage1,.pPage2,.pPage3,.pPage4 {
+		box-shadow: 3px 4px 9px rgba(0,0,0,0.2);
 	}
 
 /*------------------------------------------------For Tablet*/
