@@ -15,14 +15,14 @@ figure img {
 #wrapper {
 	position: fixed;
 } */
-#page1,#page2,#page3,#page4,#menu{
+#page1,#page2,#page3,#page4,#page5,#menu{
 	height: 100vh;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	padding-top: 13%;
 }
-#page1,#page2,#page3,#page4 {
+#page1,#page2,#page3,#page4,#page5 {
 	padding-right: 30px;
 }
 .logoPage {
@@ -81,11 +81,32 @@ header {
 	#menu ul li {
 		margin: 7px 0;
 	}
-
-.figSocMed {
-	padding: 5px 0;
-	margin: 5px 0;
+/* LAST PAGE */
+#page5 {
+	padding: 0 10%;
 }
+.textPre {
+	margin-bottom: 5%;
+}
+.socMed {
+	display: flex;
+	margin-top: 5%;
+}
+.socMed ul li {
+	float: left;
+}
+.socMed ul li img{
+	width: 30px;
+	margin: 0 5px;
+}
+	.logoPre {
+		float: left;
+		width: 45%;
+	}
+	.logoPre1 {
+		float: right;
+		width: 45%;
+	}
 /*===================================================RESPONSIVE==============================================================*/
 .row::after {
     content: "";
@@ -122,12 +143,15 @@ header {
 	.col-tab-11 {width:91.66%;}
 	.col-tab-12 {width:100%;}
 
-	#page1,#page2,#page3,#page4,#menu{
+	#page1,#page2,#page3,#page4,#page5,#menu{
 		padding-top: 5%;
 		padding-right: 0;
 	}
 	#page1,#page2,#page3,#page4,.logoPage {
 		padding-right: 20px;
+	}
+	#page5 {
+		padding-left:0;
 	}
 	/* FIGURE AND IMAGES*/
 	.figLogo {
@@ -173,6 +197,10 @@ header {
 	}
 	.figPage img {
 		width: 100%;
+	}
+	#page5 {
+		padding-left: 0;
+		padding-right: 0;
 	}
 	/*END OF SLIDER LAYOUT AND STYLE*/
 }

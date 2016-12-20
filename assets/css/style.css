@@ -32,7 +32,7 @@ li {
 a {
 	color: #69cce0;
 }
-#page1,#page2,#page3,#page4,#menu {
+#page1,#page2,#page3,#page4,#page5,#menu {
 	justify-content: center;
 	align-items: center;
 }
@@ -48,12 +48,13 @@ a {
 #page4 {
 	background-color: #308694;
 }
-#menu {
-	background-color: #2B2B2B;
+#page5 {
+	background-color: #4C4D4F;
 }
-#menu ul {
-	background-color: #FFFFFF;
-}
+/* MENU */
+	#menu {
+		background-color: #FFFFFF;
+	}
 .logoPage {
 	align-items: center;
 }
@@ -62,6 +63,13 @@ a {
 		background-color: #FFFFFF;
 		border-radius: 20px;
 		box-shadow: 3px 4px 9px rgba(0,0,0,0.2);
+	}
+	#menu ul li img{
+		opacity: 0.9;
+		transition: 0.5s;
+	}
+	#menu ul li img:hover {
+		opacity: 1;
 	}
 .title {
 	display: block;
@@ -118,11 +126,22 @@ a {
 		color: #FFFFFF;
 	}
 	.pPage1,.pPage2,.pPage3,.pPage4 {
+		font-size: 0.9em;
 		box-shadow: 3px 4px 9px rgba(0,0,0,0.2);
 	}
-
+/* Last Page */
+.socMed ul li img{
+	opacity: 0.5;
+	transition: 0.5s;
+}
+.socMed ul li img:hover{
+	opacity: 1;
+}
 /*------------------------------------------------For Tablet*/
 @media only screen and (min-width:481px) {
+	.pPage1,.pPage2,.pPage3,.pPage4 {
+		font-size: 1em;
+	}
 	/*Heading*/
 	.textPage {
 		border: none;
