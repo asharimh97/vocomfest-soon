@@ -1,0 +1,219 @@
+@charset "utf-8";
+/* CSS Document */
+/*=========================================== LAYOUT =================================================*/
+* {
+	padding: 0;
+	margin: 0 auto;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+figure img {
+	width: 100%;
+} 
+#page1,#page2,#page3,#page4,#page5,#menu{
+	height: 100vh;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+}
+#page1,#page2,#page3,#page4,#page5 {
+	padding-right: 30px;
+}
+.logoPage {
+	padding-right:20px;
+}
+header {
+	position: fixed;
+	top: 20px;
+    z-index: 3;
+    display: none;
+}
+/* FIGURE AND IMAGES*/
+	.figLogo {
+		padding: 5% 10%;
+	}
+	.figPage {
+		position: relative;
+		overflow: hidden;
+	}
+	.figPage img.blank {
+		position: relative;
+	}
+	.figPage img {
+		width: 100%;
+		height:auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+.textPage {
+	margin: 8px 0 0px;
+}
+.pPage {
+	padding: 20px;
+	margin-top: 20px;
+}
+/* NAV */
+	#menu {
+		position: fixed;
+		right: 0;
+		width: 30px;
+		z-index: 3;
+	}
+	#menu ul {
+		width: 100%;
+		padding: 5px;
+		margin-bottom: 10px;
+	}
+	#menu ul li img {
+		width:16px;
+	}
+	#menu ul li#lorem-close img {
+		width:20px;
+	}
+	#menu ul li {
+		margin: 7px 0;
+	}
+/* LAST PAGE */
+#page5 {
+	padding: 0 10%;
+}
+.textPre {
+	margin-bottom: 5%;
+}
+.socMed {
+	display: flex;
+	margin-top: 5%;
+}
+.socMed ul li {
+	float: left;
+}
+.socMed ul li img{
+	width: 30px;
+	margin: 0 5px;
+}
+	.logoPre {
+		float: left;
+		width: 45%;
+	}
+	.logoPre1 {
+		float: right;
+		width: 45%;
+	}
+/*===================================================RESPONSIVE==============================================================*/
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/*For Mobile Phones*/
+[class*="col-"] {
+	width: 100%;	
+}
+	.logoPage {
+		width: 35%;
+	}
+	.figPage {
+		width: 55%;
+	}
+
+/*------------------------------------------------For Tablet*/
+@media only screen and (min-width:481px) {
+	.col-tab-1 {width:8.33%;}	
+	.col-tab-2 {width:16.66%;}
+	.col-tab-3 {width:25%;}
+	.col-tab-3-1 {width:23%;}
+	.col-tab-3-3 {width: 30.3%;}
+	.col-tab-4 {width:33.33%;}
+	.col-tab-5 {width:41.66%;}
+	.col-tab-5-1 {width:46.6%;}
+	.col-tab-6 {width:50%;}
+	.col-tab-7 {width:58.33%;}
+	.col-tab-8 {width:66.66%;}
+	.col-tab-8-1 {width:69%;}
+	.col-tab-9 {width:75%;}
+	.col-tab-10 {width:83.33%;}
+	.col-tab-11 {width:91.66%;}
+	.col-tab-12 {width:100%;}
+
+	header {
+		display: block;
+	}
+	#page1,#page2,#page3,#page4,#page5,#menu{
+		padding-right: 0;
+	}
+	#page1,#page2,#page3,#page4,.logoPage {
+		padding-right: 20px;
+	}
+	#page5 {
+		padding-left:0;
+	}
+	/* FIGURE AND IMAGES*/
+	.figLogo {
+		padding: 5% 10%;
+	}
+	.figPage img {
+		width: 100%;
+	}
+	.logoPage {
+		float:left;
+		padding-left: 3%;
+		width: 20%;
+	}
+}
+
+/*-----------------------------------------------For Dekstop*/
+@media only screen and (min-width:721px) {
+	.col-1 {width:8.33%;}	
+	.col-2 {width:16.66%;}
+	.col-3 {width:25%;}
+	.col-3-1 {width:23%;}
+	.col-3-2 {width: 27.5%;}
+	.col-3-3 {width: 30.3%;}
+	.col-4-1 {width:29.3%;}
+	.col-4-2 {width:32.7%;}
+	.col-4 {width:33.33%;}
+	.col-5 {width:41.66%;}
+	.col-5-1 {width:46.6%;}
+	.col-6 {width:50%;}
+	.col-7 {width:58.33%;}
+	.col-8 {width:66.66%;}
+	.col-8-1 {width:69.5%;}
+	.col-9 {width:75%;}
+	.col-10 {width:83.33%;}
+	.col-11 {width:91.66%;}
+	.col-12 {width:100%;}
+
+	header {
+		display: block;
+		padding-right: 30px;
+	}
+	#fullpage {
+		padding-right: 30px;
+	}
+	#page1,#page2,#page3,#page4,#page5,.logoPage {
+		padding-top: 0px;
+		padding-right: 30px;
+	}
+	#menu{
+		padding-top: 0px;
+		padding-right: 0;
+	}
+	.textPage {
+		float: left;
+		margin: 30px 0 20px;
+	}
+	.figPage img {
+		width: 100%;
+	}
+	#page5 {
+		padding-left: 0;	
+	}
+	.logoPage {
+		float: none;
+		padding-left: 0;
+	}
+	/*END OF SLIDER LAYOUT AND STYLE*/
+}

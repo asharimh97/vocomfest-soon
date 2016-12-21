@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*=========================================== STYLE =================================================*/
+/* FONT */
+	@font-face {
+	  font-family: "Aller-Light";
+	  src: url("../fonts/Aller-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Aller-Light.woff") format("woff"), url("../fonts/Aller-Light.ttf") format("truetype"), url("../fonts/Aller-Light.svg#Aller-Light") format("svg");
+	  font-weight: normal;
+	  font-style: normal; 
+	}
+	@font-face {
+		font-family: "Bitsumishi";
+		src: url(../fonts/BITSUMIS.ttf) format("truetype");
+		font-weight: normal;
+	  	font-style: normal; 
+	}
+	@font-face {
+		font-family: "Arciform";
+		src: url(../fonts/Arciform.otf);
+		font-weight: normal;
+	  	font-style: normal; 
+	}
+
+*{
+	font-family : "Aller-Light";
+	color: #795548;
+}
+li {
+	list-style-type: none;
+}
+a {
+	color: #69cce0;
+}
+#page1,#page2,#page3,#page4,#page5,#menu {
+	justify-content: center;
+	align-items: center;
+}
+#page1 {
+	background-color: #2980B8;
+}
+#page2 {
+	background-color: #394C81;
+}
+#page3 {
+	background-color: #69CCE0;
+}
+#page4 {
+	background-color: #308694;
+}
+#page5 {
+	background-color: #4C4D4F;
+}
+/* MENU */
+	#menu {
+		background-color: #FFFFFF;
+	}
+.logoPage {
+	align-items: center;
+}
+/*FIGURE IMAGES*/
+	.figLogo {
+		background-color: #FFFFFF;
+		border-radius: 20px;
+		box-shadow: 3px 4px 9px rgba(0,0,0,0.2);
+	}
+	#menu ul li img{
+		opacity: 0.9;
+		transition: 0.5s;
+	}
+	#menu ul li img:hover {
+		opacity: 1;
+	}
+.title {
+	display: block;
+}
+.textPage {
+	padding: 0 20px;
+}
+.textPage2 {
+	border: none;
+}
+.textPage h2, .textPage h4 {
+		text-align: center;
+	}
+/*Heading*/
+	.textPage h2 {
+		color: #FFFFFF;
+		font-size: 2em;
+		font-family: "Bitsumishi";
+	}
+	.textPage h4 {
+		color: #FFFFFF;
+		font-size: 1.5em;
+		font-family: "Century Gothic";
+	}
+	h2.octa,h4.octa {
+		font-family: "Aller-Light";
+	}
+	.textPage h2.small {
+		font-size: 1.5em;
+	}
+	.textPage h2.big {
+		font-size: 2em;
+		text-align: right;
+	}
+/*Paragraph*/
+	.pPage1 {
+		background-color: #23a7f1;
+		border-left: #0177c1 5px solid;
+		color: #FFFFFF;
+	}
+	.pPage2 {
+		background-color: #5065A1;
+		border-left: #1E2742 5px solid;
+		color: #FFFFFF;
+	}
+	.pPage3 {
+		background-color: #2AA5C4;
+		border-left: #195571 5px solid;
+		color: #FFFFFF;
+	}
+	.pPage4 {
+		background-color: #3898AA;
+		border-left: #336666 5px solid;
+		color: #FFFFFF;
+	}
+	.pPage1,.pPage2,.pPage3,.pPage4 {
+		font-size: 0.9em;
+		text-align: center;
+		box-shadow: 3px 4px 9px rgba(0,0,0,0.2);
+	}
+/* Last Page */
+.socMed ul li img{
+	opacity: 0.5;
+	transition: 0.5s;
+}
+.socMed ul li img:hover{
+	opacity: 1;
+}
+/*------------------------------------------------For Tablet*/
+@media only screen and (min-width:481px) {
+	.pPage1,.pPage2,.pPage3,.pPage4 {
+		font-size: 1em;
+	}
+	/*Heading*/
+	.textPage {
+		border: none;
+	}
+	.textPage h2 {
+		font-size: 2.5em;
+	}
+	.textPage h4 {
+		font-size: 2em;
+	}
+	.textPage h2.small {
+		font-size: 1.5em;
+	}
+	.textPage h2.big {
+		font-size: 2.5em;
+	}
+}
+
+/*-----------------------------------------------For Dekstop*/
+@media only screen and (min-width:721px) {
+	.textPage h2 {
+		font-size: 3.5em;
+	}
+	.textPage h4 {
+		font-size: 2em;
+	}
+	.textPage h2.small {
+		font-size: 1.5em;
+	}
+	.textPage h2.big {
+		font-size: 3.5em;
+	}
+	.textPage {
+		border-right: 1px #FFFFFF solid;
+		text-align: right;
+	}
+	.textPage2 {
+		border: none;
+		text-align: left;
+	}
+	.textPage h2.small {
+		font-size: 1.5em;
+		text-align: right;
+	}
+}
