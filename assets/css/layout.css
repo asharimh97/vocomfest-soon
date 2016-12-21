@@ -11,10 +11,10 @@
 }
 figure img {
 	width: 100%;
-} /*
-#wrapper {
-	position: fixed;
-} */
+} 
+#fullpage {
+	padding-right: 30px;
+}
 #page1,#page2,#page3,#page4,#page5,#menu{
 	height: 100vh;
 	background-size: cover;
@@ -32,6 +32,7 @@ header {
 	top: 20px;
     z-index: 3;
     display: none;
+    padding-right: 30px;
 }
 /* FIGURE AND IMAGES*/
 	.figLogo {
@@ -192,7 +193,11 @@ header {
 	header {
 		display: block;
 	}
-	#page1,#page2,#page3,#page4,#menu{
+	#page1,#page2,#page3,#page4,#page5,.logoPage {
+		padding-top: 0px;
+		padding-right: 30px;
+	}
+	#menu{
 		padding-top: 0px;
 		padding-right: 0;
 	}
