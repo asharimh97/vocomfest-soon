@@ -1,0 +1,96 @@
+/* Base page setting */
+#page-frame{
+	width : 100% ;
+	height : 400% ;
+	position : absolute ;
+	top : 0 ;
+	left : 0 ;
+	background : $lightblue !important;
+	z-index : 50 ;
+	@include transition(0.4) ;
+}
+#hal1, #hal2, #hal3, #hal4,#hal5{
+	position: absolute ;
+	display: block ;
+	width : 100% ;
+	height: 100vh ;
+	color : $white ;
+}
+#hal1{
+	background: #2980B8 !important ;
+	top : 0vh ;
+}
+#hal2{
+	background: #394C81 !important ;
+	top : 100vh ;
+}
+#hal3{
+	background: #69CCE0 !important ;
+	top : 200vh ;
+}
+#hal4{
+	background : #308694 !important ;
+	top : 300vh ;
+}
+#hal5{
+	background : #4C4D4F !important ;
+	top : 400vh ;
+}
+#side-content{
+	position: fixed ;
+	right : 0 ;
+	top : 50% ;
+	transform: translateY(-50%);
+	z-index: 101 ;
+	display: none ;
+}
+ul.bullet-nav{
+	margin : 10px ;
+	padding : 5px ;
+	color : $white !important ;
+
+	li{
+		width: 20px ;
+		height: 20px ;
+		list-style: none ;
+		display: block ;
+		margin : 10px 5px ;
+		background : url('../img/circle0.png') ;
+		background-size: 100% ;
+		background-repeat: no-repeat;
+		@include transition(0.3) ;
+
+		a{
+			display: block ;
+			width : 100% ;
+			height: 100% ;
+			color : $white !important ;
+			text-decoration: none ;
+			font-style: none ;
+		}
+
+		.vocom-icon, .list-icon{
+			max-width : 20px ;
+		}
+	}
+	
+	li.active{
+		background : url('../img/circle1.png') ;
+		background-size: 100% ;
+		background-repeat: no-repeat;
+		@include transition(0.3) ;
+	}
+}
+.slide-content{
+	position: absolute;
+	width : 100% ;
+	overflow: hidden ;
+	top : 50% ;
+	left : 50% ;
+	transform: translate(-50%, -50%);
+	text-align: center ;
+}
+/* Slide content, competitions */
+.present-img{
+	width: 100% ;
+}

@@ -130,6 +130,30 @@
 .he-1{
   font-size : 2.4em ;
 }
+.special{
+  font-family : 'Montserrat-Bold' ;
+  color : inherit ;
+}
 .copyright{
   color : $white ;
+}
+
+/* Font color */
+.wh{
+  color : $white !important ;
+}
+.blue{
+  color : $blue !important ;
+}
+.lblue{
+  color : $lightblue !important ;
+}
+.red{
+  color : $red !important ;
+}
+.turq{
+  color : $turq !important ;
+}
+.emerald{
+  color : $emerald !important ;
 }

@@ -9,6 +9,10 @@
 $blue : #2980b8 ;
 $lightblue : #3497db ;
 $white : #fff ;
+$red : #e74c3c ;
+$turq : #1abc9c ;
+$emerald : #2ecc71 ;
+$cloud : #ecf0f1 ;
 
 @mixin transition($time){
 	transition: all $time*1s ease-in-out ;
@@ -97,6 +101,23 @@ html, body{
 }
 
 /* Main Components */
+#lorem-close{
+	position: fixed ;
+	top : 2% ;
+	right: 2% ;
+	font-size: 3.5em ;
+	color : $white ;
+	z-index: 101 ;
+	text-decoration: none ;
+	font-style: none ;
+	@include transition(0.4) ;
+
+	&:hover{
+		color : $cloud ;
+		transform : rotate(360deg) ;
+		@include transition(0.4) ;
+	}
+}
 #main-content{
 	overflow: hidden ;
 	z-index: 1000 ;
@@ -110,9 +131,24 @@ html, body{
 	display: table-cell ;
 	float : none ;
 }
-
+.slide-title{
+	overflow : hidden ;
+	padding : 20px 30px ;
+	background: $white ;
+	position : fixed ;
+	border-radius : 40px ;
+	top : 3% ;
+	left : 50% ;
+	z-index : 99 ;
+	transform: translateX(-50%) ;
+	@include transition(0.3) ;
+}
 .brand-logo{
 	max-height: 70px ;
+}
+#event-logo{
+	max-height : 35px ;
+	display: none ;
 }
 .bods{
 	position: absolute ;
@@ -279,3 +315,4 @@ ul.social-links{
 	}
 }
 @import '_animation' ;
+@import '_slides' ;

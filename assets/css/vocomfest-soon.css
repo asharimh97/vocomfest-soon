@@ -94,8 +94,31 @@
 .he-1 {
   font-size: 2.4em; }
 
+.special {
+  font-family: "Montserrat-Bold";
+  color: inherit; }
+
 .copyright {
   color: #fff; }
+
+/* Font color */
+.wh {
+  color: #fff !important; }
+
+.blue {
+  color: #2980b8 !important; }
+
+.lblue {
+  color: #3497db !important; }
+
+.red {
+  color: #e74c3c !important; }
+
+.turq {
+  color: #1abc9c !important; }
+
+.emerald {
+  color: #2ecc71 !important; }
 
 /* Bootstrap reset CSS */
 .btn {
@@ -593,6 +616,27 @@ html, body {
   padding-right: 50px; }
 
 /* Main Components */
+#lorem-close {
+  position: fixed;
+  top: 2%;
+  right: 2%;
+  font-size: 3.5em;
+  color: #fff;
+  z-index: 101;
+  text-decoration: none;
+  font-style: none;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out; }
+  #lorem-close:hover {
+    color: #ecf0f1;
+    transform: rotate(360deg);
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out; }
+
 #main-content {
   overflow: hidden;
   z-index: 1000;
@@ -606,8 +650,27 @@ html, body {
   display: table-cell;
   float: none; }
 
+.slide-title {
+  overflow: hidden;
+  padding: 20px 30px;
+  background: #fff;
+  position: fixed;
+  border-radius: 40px;
+  top: 3%;
+  left: 50%;
+  z-index: 99;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+
 .brand-logo {
   max-height: 70px; }
+
+#event-logo {
+  max-height: 35px;
+  display: none; }
 
 .bods {
   position: absolute;
@@ -1029,5 +1092,101 @@ ul.social-links {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+/* Base page setting */
+#page-frame {
+  width: 100%;
+  height: 400%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #3497db !important;
+  z-index: 50;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out; }
+
+#hal1, #hal2, #hal3, #hal4, #hal5 {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  color: #fff; }
+
+#hal1 {
+  background: #2980B8 !important;
+  top: 0vh; }
+
+#hal2 {
+  background: #394C81 !important;
+  top: 100vh; }
+
+#hal3 {
+  background: #69CCE0 !important;
+  top: 200vh; }
+
+#hal4 {
+  background: #308694 !important;
+  top: 300vh; }
+
+#hal5 {
+  background: #4C4D4F !important;
+  top: 400vh; }
+
+#side-content {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 101;
+  display: none; }
+
+ul.bullet-nav {
+  margin: 10px;
+  padding: 5px;
+  color: #fff !important; }
+  ul.bullet-nav li {
+    width: 20px;
+    height: 20px;
+    list-style: none;
+    display: block;
+    margin: 10px 5px;
+    background: url("../img/circle0.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out; }
+    ul.bullet-nav li a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      color: #fff !important;
+      text-decoration: none;
+      font-style: none; }
+    ul.bullet-nav li .vocom-icon, ul.bullet-nav li .list-icon {
+      max-width: 20px; }
+  ul.bullet-nav li.active {
+    background: url("../img/circle1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out; }
+
+.slide-content {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+/* Slide content, competitions */
+.present-img {
+  width: 100%; }
 
 /*# sourceMappingURL=vocomfest-soon.css.map */
