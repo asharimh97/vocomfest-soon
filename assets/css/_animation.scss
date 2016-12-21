@@ -124,6 +124,12 @@
 		animation : muter infinite 10s linear;
 	}
 }
+@media (max-width: 980px){
+	.rocket{
+		width : 60% ;
+		margin : 0 20% 5% ;
+	}
+}
 @media (max-width: 800px){
 	.rocket{
 		width : 50% ;

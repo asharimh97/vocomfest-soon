@@ -11,51 +11,6 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/vocomfest-soon.css">
 
-	<script type="text/javascript" src="assets/js/jquery-3.1.1.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.waypoints.js"></script>
-	<script type="text/javascript" src="assets/vendors/scrolloverflow.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.fullPage.js"></script>
-	<script type="text/javascript" src="assets/js/examples.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-			  sectionsColor: ['#2980B8', '#2B4457', '#4E4A9D', '#308694','#FFFFFF'],
-			  anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage','lastPage'],
-			  menu: '#menu',
-			  continuousVertical: true,
-			  onLeave: function(index, nextIndex, direction){
-			  	if( index == 1 && nextIndex == 2 ) {
-					$('#FIX2').addClass('animated flipInX');
-					$('#BIU2').addClass('animated bounceInUp');
-					$('#BID2').addClass('animated bounceInDown');
-				}
-				else if(( index == 1 || index == 2 ) && nextIndex == 3 ) {
-					$('#BIU3').addClass('animated bounceInUp');
-					$('#BID3').addClass('animated bounceInDown');
-					$('#FIX2').removeClass('animated flipInX');
-					$('#BIU2').removeClass('animated bounceInUp');
-					$('#BID2').removeClass('animated bounceInDown');
-				}
-				else if(( index == 1 || index == 2 || index == 3) && nextIndex == 4 ) {
-				$('#FIX4').addClass('animated flipInX');
-				$('#BIU4').addClass('animated bounceInUp');
-				$('#BID4').addClass('animated bounceInDown');
-					$('#BIU3').removeClass('animated bounceInUp');
-					$('#BID3').removeClass('animated bounceInDown');
-				}
-				else if(index == 4){
-				$('#FIX4').removeClass('animated flipInX');
-				$('#BIU4').removeClass('animated bounceInUp');
-				$('#BID4').removeClass('animated bounceInDown');
-				}
-				},
-			});
-			$('#lorem-close').on("click", function(){
-			$('#lorem').removeClass("lorem-show").addClass("lorem-hide");
-			// $('#roket').removeClass('rocket-launch').addClass('rocket-land') ;
-		}) ;
-		});
-	</script>
 	<link rel="shortcut icon" type="x-icon" href="./assets/img/icon.png">
 </head>
 <body>
@@ -203,6 +158,50 @@
 		</div>
 	</div>
 </div>
-
+<script type="text/javascript" src="assets/js/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="assets/js/jquery.waypoints.js"></script>
+<script type="text/javascript" src="assets/vendors/scrolloverflow.js"></script>
+<script type="text/javascript" src="assets/js/jquery.fullPage.js"></script>
+<script type="text/javascript" src="assets/js/examples.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+		  sectionsColor: ['#2980B8', '#2B4457', '#4E4A9D', '#308694','#FFFFFF'],
+		  anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage','lastPage'],
+		  menu: '#menu',
+		  continuousVertical: true,
+		  onLeave: function(index, nextIndex, direction){
+		  	if( index == 1 && nextIndex == 2 ) {
+				$('#FIX2').addClass('animated flipInX');
+				$('#BIU2').addClass('animated bounceInUp');
+				$('#BID2').addClass('animated bounceInDown');
+			}
+			else if(( index == 1 || index == 2 ) && nextIndex == 3 ) {
+				$('#BIU3').addClass('animated bounceInUp');
+				$('#BID3').addClass('animated bounceInDown');
+				$('#FIX2').removeClass('animated flipInX');
+				$('#BIU2').removeClass('animated bounceInUp');
+				$('#BID2').removeClass('animated bounceInDown');
+			}
+			else if(( index == 1 || index == 2 || index == 3) && nextIndex == 4 ) {
+			$('#FIX4').addClass('animated flipInX');
+			$('#BIU4').addClass('animated bounceInUp');
+			$('#BID4').addClass('animated bounceInDown');
+				$('#BIU3').removeClass('animated bounceInUp');
+				$('#BID3').removeClass('animated bounceInDown');
+			}
+			else if(index == 4){
+			$('#FIX4').removeClass('animated flipInX');
+			$('#BIU4').removeClass('animated bounceInUp');
+			$('#BID4').removeClass('animated bounceInDown');
+			}
+			},
+		});
+		$('#lorem-close').on("click", function(){
+		$('#lorem').removeClass("lorem-show").addClass("lorem-hide");
+		// $('#roket').removeClass('rocket-launch').addClass('rocket-land') ;
+	}) ;
+	});
+</script>
 </body>
 </html>

@@ -34,8 +34,8 @@
 					<img src="./assets/img/logo.png" class="brand-logo">
 					<h2 class="head head-title">We’re coming soon...</h2>
 					<div class="row">
-						<p class="col-md-12 head head-content">
-							VOCOMFEST (Vocational Computer Festival) merupakan acara tahunan yang diselenggarakan oleh Himpunan Mahasiswa Komputer dan Sistem Informasi Sekolah Vokasi UGM yang bertujuan untuk mempersiapkan generasi penerus bangsa dalam menghadapi perkembangan teknologi yang semakin mendunia. Tema Umum VOCOMFEST 2017 yaitu "<b>Creating Smart Citizen for Social Welfare with Technology</b>". VOCOMFEST 2017 ini terdiri dari 4 rangkaian acara yaitu ...
+						<p class="col-md-10 head head-content">
+							VOCOMFEST (Vocational Computer Festival) merupakan acara tahunan HIMAKOMSI UGM yang bertujuan untuk mempersiapkan generasi penerus bangsa dalam menghadapi perkembangan teknologi yang semakin mendunia. Tema Umum VOCOMFEST 2017 yaitu "<b>Creating Smart Citizen for Social Welfare with Technology</b>".
 						</p>
 					</div>
 					<p>
@@ -74,11 +74,15 @@
 	<img src="./assets/img/cloud-05.png" class="cloud fifth-cloud">
 </section>
 <section id="bottom-surface">
-	<div class="land"></div>
+	<div class="land">
+		<div class="container-fluid pd-t-15">
+			<p class="copyright small"><i class="fa fa-heart"></i> Made with love in Yogyakarta<br>By Vocomfest Technical Support</p>
+		</div>
+	</div>
 </section>
 
 <div id="lorem" class="lorem-hide">
-	<button id="lorem-close">close</button>
+	<!-- <button id="lorem-close">close</button> -->
 	<!-- <div id="includedContent"></div> -->
 </div>
 <!-- Javascript here -->
@@ -89,7 +93,8 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('#showLorem').on("click", function(){
-			$('#lorem').removeClass("lorem-hide").addClass("lorem-show").load("page1.html");
+			$('#lorem').removeClass("lorem-hide").addClass("lorem-show");
+			document.location='page1.html' ;
 			// $('#roket').addClass('rocket-launch') ;
 		});
 		$('#lorem-close').on("click", function(){

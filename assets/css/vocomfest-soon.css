@@ -94,6 +94,9 @@
 .he-1 {
   font-size: 2.4em; }
 
+.copyright {
+  color: #fff; }
+
 /* Bootstrap reset CSS */
 .btn {
   font-family: "Montserrat" !important; }
@@ -664,13 +667,27 @@ ul.social-links {
   bottom: 0;
   left: 0; }
 
-@media (max-width: 980px) {
+@media (max-width: 1024px) {
+  #main-content {
+    background: none; } }
+@media (max-width: 985px) {
   #main-content {
     background: none; }
 
   .bods {
     display: block; }
 
+  /*.content-row{
+  	display: flex ;
+  	display: -webkit-flex ;
+  	flex-direction: column-reverse ;
+  	overflow: hidden ;
+  }
+  .content{
+  	flex : 1 ;
+  	justify-content: center;
+  	overflow: hidden ;
+  }*/
   .content-row {
     display: block;
     height: 100%; }
@@ -684,8 +701,11 @@ ul.social-links {
     position: relative;
     top: 0;
     transform: translateY(0);
-    text-align: center; } }
-@media (max-width: 800px) {
+    text-align: center; }
+
+  .land {
+    position: relative; } }
+@media (max-width: 980px) {
   .bods {
     padding-top: 15%;
     padding-bottom: 5%; }
@@ -702,7 +722,14 @@ ul.social-links {
     overflow: hidden; }
 
   .land {
-    display: none; } }
+    display: none; }
+
+  .head-frame {
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+    text-align: center; } }
 @media (max-width: 768px) {
   .bods {
     padding-top: 15%;
@@ -926,6 +953,10 @@ ul.social-links {
   .rocket-cloud {
     animation: muter infinite 10s linear; }
 
+@media (max-width: 980px) {
+  .rocket {
+    width: 60%;
+    margin: 0 20% 5%; } }
 @media (max-width: 800px) {
   .rocket {
     width: 50%;
