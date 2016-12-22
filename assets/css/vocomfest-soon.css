@@ -1186,6 +1186,163 @@ ul.bullet-nav {
   text-align: center; }
 
 /* Slide content, competitions */
+/* Own self responsive */
+@media only screen and (min-width: 481px) {
+  .col-tab-1 {
+    width: 8.33%; }
+
+  .col-tab-2 {
+    width: 16.66%; }
+
+  .col-tab-3 {
+    width: 25%; }
+
+  .col-tab-3-1 {
+    width: 23%; }
+
+  .col-tab-3-3 {
+    width: 30.3%; }
+
+  .col-tab-4 {
+    width: 33.33%; }
+
+  .col-tab-5 {
+    width: 41.66%; }
+
+  .col-tab-5-1 {
+    width: 46.6%; }
+
+  .col-tab-6 {
+    width: 50%; }
+
+  .col-tab-7 {
+    width: 58.33%; }
+
+  .col-tab-8 {
+    width: 66.66%; }
+
+  .col-tab-8-1 {
+    width: 69%; }
+
+  .col-tab-9 {
+    width: 75%; }
+
+  .col-tab-10 {
+    width: 83.33%; }
+
+  .col-tab-11 {
+    width: 91.66%; }
+
+  .col-tab-12 {
+    width: 100%; } }
+@media only screen and (min-width: 721px) {
+  .col-1 {
+    width: 8.33%; }
+
+  .col-2 {
+    width: 16.66%; }
+
+  .col-3 {
+    width: 25%; }
+
+  .col-3-1 {
+    width: 23%; }
+
+  .col-3-2 {
+    width: 27.5%; }
+
+  .col-3-3 {
+    width: 30.3%; }
+
+  .col-4-1 {
+    width: 29.3%; }
+
+  .col-4-2 {
+    width: 32.7%; }
+
+  .col-4 {
+    width: 33.33%; }
+
+  .col-5 {
+    width: 41.66%; }
+
+  .col-5-1 {
+    width: 46.6%; }
+
+  .col-6 {
+    width: 50%; }
+
+  .col-7 {
+    width: 58.33%; }
+
+  .col-8 {
+    width: 66.66%; }
+
+  .col-8-1 {
+    width: 69.5%; }
+
+  .col-9 {
+    width: 75%; }
+
+  .col-10 {
+    width: 83.33%; }
+
+  .col-11 {
+    width: 91.66%; }
+
+  .col-12 {
+    width: 100%; } }
+.pull-center {
+  margin: 0 auto !important; }
+
+figure img {
+  width: 100%; }
+
+.figPage {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+  .figPage img.blank {
+    position: relative; }
+  .figPage img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+p.pPage {
+  padding: 20px;
+  margin-top: 20px;
+  color: #fff; }
+
+.pPage1, .pPage2, .pPage3, .pPage4 {
+  font-size: 1.15em;
+  text-align: center; }
+
+.pPage1 {
+  background: #23a7f1;
+  border-left: #0177c1 5px solid; }
+
+.pPage1 {
+  background: #23a7f1;
+  border-left: #0177c1 5px solid; }
+
+.pPage2 {
+  background: #5065A1;
+  border-left: #1E2742 5px solid; }
+
+.pPage3 {
+  background: #2AA5C4;
+  border-left: #195571 5px solid; }
+
+.pPage4 {
+  background: #3898AA;
+  border-left: #336666 5px solid; }
+
 .present-img {
   width: 100%; }
 
