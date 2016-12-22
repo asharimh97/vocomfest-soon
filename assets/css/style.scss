@@ -131,18 +131,6 @@ html, body{
 	display: table-cell ;
 	float : none ;
 }
-.slide-title{
-	overflow : hidden ;
-	padding : 20px 30px ;
-	background: $white ;
-	position : fixed ;
-	border-radius : 40px ;
-	top : 3% ;
-	left : 50% ;
-	z-index : 99 ;
-	transform: translateX(-50%) ;
-	@include transition(0.3) ;
-}
 .brand-logo{
 	max-height: 70px ;
 }

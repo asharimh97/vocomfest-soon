@@ -650,21 +650,6 @@ html, body {
   display: table-cell;
   float: none; }
 
-.slide-title {
-  overflow: hidden;
-  padding: 20px 30px;
-  background: #fff;
-  position: fixed;
-  border-radius: 40px;
-  top: 3%;
-  left: 50%;
-  z-index: 99;
-  transform: translateX(-50%);
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out; }
-
 .brand-logo {
   max-height: 70px; }
 
@@ -1176,6 +1161,21 @@ ul.bullet-nav {
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out; }
 
+.slide-title {
+  overflow: hidden;
+  padding: 20px 30px;
+  background: #fff;
+  position: fixed;
+  border-radius: 40px;
+  top: 3%;
+  left: 50%;
+  z-index: 99;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+
 .slide-content {
   position: absolute;
   width: 100%;
@@ -1292,6 +1292,12 @@ ul.bullet-nav {
 
   .col-12 {
     width: 100%; } }
+@media screen and (max-width: 361px) {
+  .slide-title {
+    display: none !important; }
+
+  .titlePage h1 {
+    font-size: 1.7em !important; } }
 .pull-center {
   margin: 0 auto !important; }
 

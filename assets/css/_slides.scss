@@ -81,6 +81,18 @@ ul.bullet-nav{
 		@include transition(0.3) ;
 	}
 }
+.slide-title{
+	overflow : hidden ;
+	padding : 20px 30px ;
+	background: $white ;
+	position : fixed ;
+	border-radius : 40px ;
+	top : 3% ;
+	left : 50% ;
+	z-index : 99 ;
+	transform: translateX(-50%) ;
+	@include transition(0.3) ;
+}
 .slide-content{
 	position: absolute;
 	width : 100% ;
@@ -130,6 +142,16 @@ ul.bullet-nav{
 	.col-10 {width:83.33%;}
 	.col-11 {width:91.66%;}
 	.col-12 {width:100%;}
+}
+@media screen and (max-width: 361px){
+	.slide-title{
+		display: none !important ;
+	}
+	.titlePage{
+		h1{
+			font-size: 1.7em !important ;
+		}
+	}
 }
 .pull-center{
 	margin : 0 auto !important ;
