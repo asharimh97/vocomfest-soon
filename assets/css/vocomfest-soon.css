@@ -1186,7 +1186,64 @@ ul.bullet-nav {
   text-align: center; }
 
 /* Slide content, competitions */
+.pull-center {
+  margin: 0 auto !important; }
+
+figure img {
+  width: 100%; }
+
+.figPage {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+  .figPage img.blank {
+    position: relative; }
+  .figPage img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+p.pPage {
+  padding: 20px;
+  margin-top: 20px;
+  color: #fff; }
+
+.pPage1, .pPage2, .pPage3, .pPage4 {
+  font-size: 1.15em;
+  text-align: center; }
+
+.pPage1 {
+  background: #23a7f1;
+  border-left: #0177c1 5px solid; }
+
+.pPage1 {
+  background: #23a7f1;
+  border-left: #0177c1 5px solid; }
+
+.pPage2 {
+  background: #5065A1;
+  border-left: #1E2742 5px solid; }
+
+.pPage3 {
+  background: #2AA5C4;
+  border-left: #195571 5px solid; }
+
+.pPage4 {
+  background: #3898AA;
+  border-left: #336666 5px solid; }
+
+.present-img {
+  width: 100%; }
+
 /* Own self responsive */
+@media (max-height: 480px) {
+  .slide-title {
+    display: none !important; } }
 @media only screen and (min-width: 481px) {
   .col-tab-1 {
     width: 8.33%; }
@@ -1292,64 +1349,23 @@ ul.bullet-nav {
 
   .col-12 {
     width: 100%; } }
-@media screen and (max-width: 361px) {
+@media (max-height: 500px) {
+  .slide-title {
+    padding: 15px 25px; }
+
+  #event-logo {
+    max-height: 25px; } }
+@media screen and (max-width: 480px) {
   .slide-title {
     display: none !important; }
 
   .titlePage h1 {
+    font-size: 1.8em; }
+
+  .pPage1, .pPage2, .pPage3, .pPage4 {
+    font-size: 1em; } }
+@media screen and (max-width: 361px) {
+  .titlePage h1 {
     font-size: 1.7em !important; } }
-.pull-center {
-  margin: 0 auto !important; }
-
-figure img {
-  width: 100%; }
-
-.figPage {
-  position: relative;
-  overflow: hidden;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box; }
-  .figPage img.blank {
-    position: relative; }
-  .figPage img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0; }
-
-p.pPage {
-  padding: 20px;
-  margin-top: 20px;
-  color: #fff; }
-
-.pPage1, .pPage2, .pPage3, .pPage4 {
-  font-size: 1.15em;
-  text-align: center; }
-
-.pPage1 {
-  background: #23a7f1;
-  border-left: #0177c1 5px solid; }
-
-.pPage1 {
-  background: #23a7f1;
-  border-left: #0177c1 5px solid; }
-
-.pPage2 {
-  background: #5065A1;
-  border-left: #1E2742 5px solid; }
-
-.pPage3 {
-  background: #2AA5C4;
-  border-left: #195571 5px solid; }
-
-.pPage4 {
-  background: #3898AA;
-  border-left: #336666 5px solid; }
-
-.present-img {
-  width: 100%; }
 
 /*# sourceMappingURL=vocomfest-soon.css.map */
